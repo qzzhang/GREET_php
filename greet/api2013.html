@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<link rel="stylesheet" type="text/css" href="greetstyle.css" />
+<title>GREET - Add your own data</title>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40965405-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body style="" lang="EN-US">
+<a href="index.htm">
+<div id="top">
+</div></a>
+<div id="content">
+<table border="0">
+<tbody>
+<tr><td>
+<h1>GREET API for plugin</h1>
+<p>GREET is now capable of loading plugin in order to extend functionalities. 
+We are at the early stages of developing this API so we do appreciate any comments 
+that may help us improving.</p>
+<p>The <a href="modules.html">plugin page</a> shows 
+examples of plugin that have been developed using the interface.</p>
+<p>Documentation about the available methods and classes is <a href="http://greet.es.anl.gov/greet/api/html/index.html">available as HTML</a>
+<p>The project containing the interfaces and some examples is available from GitHub <a href="https://github.com/greet-dev/GREETAPI">https://github.com/greet-dev/GREETAPI</a>
+<p>
+You can communicate with the GREET development team online on our <a href="http://webchat.freenode.net/?channels=greetlca">irc webchat</a>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<h1>Getting started</h1>
+<p>In order to familiarize yourself with the available methods and objects we created examples available from
+the archive. Example1 lists all pathways and allows you to observe the total GHGs for a selected pathway.
+Example2 allows the user to find a parameter and change the user value by the model, then allows to run another simulation.
+</p>
+<p>
+Examples source code can be downloaded and tested by following these instructions:
+</p>
+<ul>
+  <b>1)</b> Download the Interfaces and examples on the <a href="https://github.com/greet-dev/GREETAPI/archive/master.zip">GitHub repository</a>
+  <br><br><b>2)</b> Extract and open the GreetAPI-Examples.sln using VisualStudio 2010 or above:
+  <br><img style="display: block;margin-left:auto;margin-right:auto;" src="pic/vs2010api.png" width="400"></img>
+  <br><br><b>3)</b> We need to configure Visual Studio so that it runs GREET and automatically load the plug-ins in 
+  debug mode. This allows you to debug your work using the Visual Studio IDE. 
+  <br>In order to do so we'll need to configure the Debug and Post-Build actions for all projects under the solution.
+  <br>First right click the Example1 project and select "Properties"
+  <br><img style="display: block;margin-left:auto;margin-right:auto;" src="pic/1-properties.png" height="400"></img>
+  <br><br><b>4)</b> In the properties pane, select the "Debug" tab
+  <br><img style="display: block;margin-left:auto;margin-right:auto;" src="pic/2-debug.png" width="400"></img>
+  <br> In the debug tab edit the paths to the greet executable. GREET is installed in a sub-folder of your personal folder, but the easiest way to find the exact location is by running GREET, 
+  then click the "About" menu, then "About..." A new window will pop up, the installation location can be seen
+  at the bottom.
+  <br><img style="display: block;margin-left:auto;margin-right:auto;" src="pic/about.png" width="400"></img>
+  <br><br><b>5)</b> In the properties pane, select now the "Build" tab
+  <br><img style="display: block;margin-left:auto;margin-right:auto;" src="pic/3-build.png" width="400"></img>
+  <br>In the build tab edit the path to GREET with your own folder path.
+  <br><br>It is also possible to copy the plugins in the folder "My Documents\Greet\Plugins\". GREET checks if that folder contains
+  plugins at startup. See more details in the following chapter about the plugins life cycle.
+  <br> If you choose to do so, replace the path to greet with the "My Documents\Greet\Plugins\" folder in the Post-build event command line.
+  <br><br><b>6)</b> Test your plugin by starting it in Debug mode:
+  <br><img style="display: block;margin-left:auto;margin-right:auto;" src="pic/4-run.png" width="400"></img>
+  <br>When running in Debug mode you can put breakpoints in your code and easily follow the execution of the program for your
+  plugin.
+  <br>For this example you should see the menu item "Example1" created by the plugin.
+  <br><img style="display: block;margin-left:auto;margin-right:auto;" src="pic/Example1-view.png" width="400"></img>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<h1>Plugin Life Cycle</h1>
+<p>
+Plugins are loaded into GREET at startup before the data file is loaded and before the main interface is started. 
+We are looking to load plugins from two different locations: The first location we're looking into is the folder in
+which the greet.exe file is located. In this folder we are loading the modules provided by the GREET development team.
+</p>
+<p>
+For user generate plugins it is preferable to copy them into the folder : <b>"My Documents\Greet\Plugins\"</b> that we also explore
+in order to find libraries.
+<br>The main advantage of using this location is that these plugins will be loaded regardless of the real location of the
+executable. As GREET is released using ClickOnce, the real location of greet.exe is subject to change when there is an update.
+</p>
+<p>
+<img style="display: block;margin-left:auto;margin-right:auto;" src="pic/lifecycle.png" width="300">
+<br>After an instance of the plugin class is created, the first call to a plugin is InitializePlugin. This call offers to the developer
+an instance to the controler class that can be used for the plugin. The controler class is very important and provides access to
+the loaded database and to commands such as RunSimulations().</p>
+<p>
+After that the plugin will receive multiple calls: when a data file is loaded the onDatabaseLoaded() method is called,
+when the main user interface of GREET is loaded, the plugin calls will be GetMainButton() and GetMainMenuItems(). You can
+override these methods to provide the main user interface with a list of Buttons or ToolStripMenuItems that will be loaded
+into the main window of GREET. There are many calls that can be used and we suggest you to look in the APlugin class for an
+exhaustive list of all the existing methods.</p>
+<p>
+ Finally when the user chooses to close GREET, the plugin is called twice. The first call is onMainFormClosing() at this point
+we are starting to close the software, but we haven't checked for database changed yet. It is then a good time for your plugin to
+push data changes before a message asks the user to save or not his changes. The last call is onFinalizePlugin() at this point all
+resources are unallocated and GREET execution is about to be terminated.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="footer-legal">
+<br>
+<div style="float: left">
+<img style="padding: 6px 0px;" src="pic/footer_doe.png" ></img>
+</div>
+<div style="float: right">
+<img src="pic/anl.png" height="60"></img>
+</div>
+<div style="text-align: center;">
+<ul>
+  <li><a href="http://science.energy.gov/">U.S. Department of Energy Office of Science</a></li>
+  <li><a href="http://www.uchicagoargonnellc.org/">UChicago Argonne LLC</a></li>
+  <li><a href="http://www.anl.gov/privacy-security-notice">Privacy & Security notice</a></li>
+</ul>
+</div>
+</div>
+</div>
+</body></html>

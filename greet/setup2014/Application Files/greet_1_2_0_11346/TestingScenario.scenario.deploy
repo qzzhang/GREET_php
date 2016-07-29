@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scenario name="Testing" author="GREET" version="1" lastmodifiedon="2014-03-17" lastmodifiedby="acdmcfarane@anl.gov">
+  <properties>
+    <width>477</width>
+    <height>650</height>
+    <excelFile>C:\Users\ac.dmcfarlane\Desktop\test1.xlsx</excelFile>
+  </properties>
+  <layout>
+    <label label="Name" name="nameTitle" />
+    <label label="Sheet" name="sheetTitle" width="100" />
+    <label label="Address" name="addressTitle" width="50" />
+    <label label="Value" name="valueTitle" flowBreak="true" />
+    <cell type="address" name="Input one" label="Input 1" excelName="" sheet="Sheet1" address="B3" value="1" cellType="0" inout="in">
+      <label useParent="true" />
+      <combo notes="" width="100" isSheet="true" />
+      <text notes="" width="50" isAddress="true" />
+      <text notes="" width="80" alignment="right" isValue="true" flowBreak="true" />
+    </cell>
+    <cell type="address" name="Input two" label="Input 2" excelName="" sheet="Sheet2" address="C4" value="1" cellType="0" inout="in">
+      <label useParent="true" />
+      <combo notes="" width="100" isSheet="true" />
+      <text notes="" width="50" isAddress="true" />
+      <text notes="" width="80" alignment="right" isValue="true" flowBreak="true" />
+    </cell>
+    <cell type="address" name="Input three" label="Input 3" excelName="" sheet="Sheet3" address="D5" value="3" cellType="0" inout="in">
+      <label useParent="true" />
+      <combo notes="" width="100" isSheet="true" />
+      <text notes="" width="50" isAddress="true" />
+      <text notes="" width="80" alignment="right" isValue="true" flowBreak="true" />
+    </cell>
+  </layout>
+  <commands>
+    <pre-calculations>
+      <copyto>All</copyto>
+      <execute>All</execute>
+      <import cell="Result" cellunit="unitless" conversion="skip" parameter="123456789" />
+      <import cell="CO2Value" cellunit="grams/joule/1000000" conversion="perform" parameter="123456788" />
+    </pre-calculations>
+    <post-calculations>
+      <export cell="GREETCalculatedResult" cellunit="unitless" conversion="skip" parameter="Results:path=36,proc=5,output=7,resources=total" />
+    </post-calculations>
+  </commands>
+</scenario>

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../greetstyleFull.css" />
+<title>GREET - Free and maintained</title>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40965405-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body style="" lang="EN-US">
+<a href="../index.htm">
+<div id="top">
+</div></a>
+<div id="content">
+<table border="0">
+<tbody>
+<tr>
+<td>
+<h1>Simulation Parameters</h1>
+<p>
+The simulation parameters section of GREET is the place to change a couple of input parameters that are reused in multiple locations. For example this is the place to select weather the
+higher heating values or lower heating values are used, or which is the target simulation year for the simulations. The simulation parameter section also contains tabs and tables that
+are containing some other parameters for the simulations, these can be edited and reused across the model in a similar way as how excel cells are reused into formulas.
+</p>
+<p>
+The simulation parameters section can be accessed by clicking the last large button in the main GREET banner:<br>
+<div id="image" style="float: left;"><img alt="Simulation parameters section" src="pics/params-screenshot.png" style="border: 0px none ; margin-top: 3px;" width="600">
+<br><div style="font-size:80%">Simulation parameters section</div>
+</div>
+</p>
+<p>
+As it can be seen on the picture above GREET is set by default to use the lower heating values and performs simulation for the target year of 2014. This means that for all resources
+when a conversion is needed in the model to convert to or from an energy value, the lower heating value of the resources will be used. If the year 2014 is selected, the values for 
+time series will automatically select closest year available in the past in the time series. For example if 2005, 2010, and 2015 values exists for a parameter: the model will use 2010 as
+it is the closest value in the past.
+</p>
+<p>
+On the right side we can see a table containing multiple parameters. The cells have different backgrounds because we make the distinction between values that are calculated or not. The cells with
+a blue background are calculated by a formula, the cells with a yellow background are values entered without using any other cells or formulas.
+</p>
+<p>
+Formulas can be entered for parameters by using conventional operators, but also by using specific functions like if() or trigonometric functions (see detailed in the user guide)<br>
+<div id="image" style="float: left;"><img alt="Simulation parameters section" src="pics/params-formula.png" style="border: 0px none ; margin-top: 3px;" width="600">
+<br><div style="font-size:80%">Formula editor for a parameter</div>
+</div>
+The formula editor allows the user to start typing a parameter name and use the auto-completion feature or click another cell to add that reference to the formula.
+</p>
+<p>
+All parameters have a unique name system wide. That means that formulas can be entered between any of the parameters. However we do not recommend doing that as it adds a lots of confusion
+and is against the ideology of the software that is to stay simple and efficient.
+</p>
+</td>
+</tbody>
+</table>
+<div id="footer-legal">
+<br>
+<div style="float: left">
+<img style="padding: 6px 0px;" src="../pic/footer_doe.png" ></img>
+</div>
+<div style="float: right">
+<img src="../pic/anl.png" height="60"></img>
+</div>
+<div style="text-align: center;">
+<ul>
+  <li><a href="http://science.energy.gov/">U.S. Department of Energy Office of Science</a></li>
+  <li><a href="http://www.uchicagoargonnellc.org/">UChicago Argonne LLC</a></li>
+  <li><a href="/privacy-security-notice">Privacy & Security notice</a></li>
+</ul>
+</div>
+</div>
+</div>
+</body></html>

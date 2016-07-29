@@ -1,0 +1,26 @@
+var class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin =
+[
+    [ "AvailableCommandsForThisPlugin", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#a9103ae4d9d799c97ec98228e9e8864c3", null ],
+    [ "GetMainMenuItems", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#a33179e28d28a8e7506c09db689e073ca", null ],
+    [ "GetMixMenuItems", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#ae7828f14baf9a04bd0e32787ef2a8a36", null ],
+    [ "GetParameterMenuItems", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#a622e18ecfa5a0d9c2983fa5f0880fceb", null ],
+    [ "GetPathwayMenuItems", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#aec83977d4d1801919750f653cec93ec3", null ],
+    [ "GetProcessMenuItems", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#a2fd5499f798c892968e5801090d6671b", null ],
+    [ "GetVehiclesMenuItems", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#a8298c0065f48af92f73de2e80cf6b1b3", null ],
+    [ "InitializePlugin", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#ac0c52dae2816e468519b522192798578", null ],
+    [ "onControlClicked", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#a336ffa1015e8ccf172f9c0865f010cd9", null ],
+    [ "onControlKeyPressed", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#a8dd68fb68325affcf6fcc42d4d3d5583", null ],
+    [ "onControlLeave", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#aa2726c30df04d546266d045f2cbccdb1", null ],
+    [ "onControlPaint", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#a196af690ca2242c672127b3725b16c92", null ],
+    [ "onDatabaseLoaded", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#a75e5f79180847f35a20e23f8a9af074f", null ],
+    [ "onDatabaseUpdate", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#a6725fb5e8937c78b18ed69269d7b61bb", null ],
+    [ "onFinalizePlugin", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#a51583c5b70d62effb7356f387ba8eb2f", null ],
+    [ "onMainFormClosing", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#ad9eca41da8e8c6969cd70593bf31a8ee", null ],
+    [ "onSaveActionRequired", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#a4134ae9bec192eab09854f057d3c85a4", null ],
+    [ "RunCommand", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#abc1189e3d96ba2c337b08ca1f82c058a", null ],
+    [ "GetPluginDescription", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#ad95d9cf308940820fac1e196adbf9f5a", null ],
+    [ "GetPluginIcon", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#a5b5b65aca75a6acb76a458c90d906109", null ],
+    [ "GetPluginMessages", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#ac4eee46200c52ec4a19fb13047473743", null ],
+    [ "GetPluginName", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#a4ade4437178f6c0037bae7ab6913c781", null ],
+    [ "GetPluginVersion", "class_greet_1_1_data_structure_v3_1_1_interfaces_1_1_a_plugin.html#a17d5c5ba97e90846fe4b846308487ea8", null ]
+];

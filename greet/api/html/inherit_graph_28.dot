@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PlugInsInterfaces.Plugin\lTypes.IGraphicalControlsPlugin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_plug_ins_interfaces_1_1_plugin_types_1_1_i_graphical_controls_plugin.html",tooltip="This interfaces provides handles to specific controls when they are drawn "];
+}

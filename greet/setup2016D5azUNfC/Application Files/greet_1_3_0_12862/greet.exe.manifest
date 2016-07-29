@@ -1,0 +1,665 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="greet.exe" version="1.3.0.12862" publicKeyToken="225603010e0cee19" language="en-US" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="Resources\greet-icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="greet" version="1.3.0.10631" language="neutral" processorArchitecture="x86" />
+    <commandLine file="greet.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DocumentFormat.OpenXml.dll" size="5812328">
+      <assemblyIdentity name="DocumentFormat.OpenXml" version="2.5.5631.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>hgSlFbKabbmSMOXXLm7wkkr7v+w=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="greet.exe" size="36664">
+      <assemblyIdentity name="greet" version="1.3.0.10631" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>NLzBJ3KG22hO+shYiqdrkWHFz7Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Greet.Gui.dll" size="2948096">
+      <assemblyIdentity name="Greet.Gui" version="1.3.0.10631" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>1k8NTn7vcZMICVKk3Al8bKuRcaA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Greet.Lib.Scenarios.dll" size="84480">
+      <assemblyIdentity name="Greet.Lib.Scenarios" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>4tBj0NQ/knVElW78iSAmLPl9qks=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Greet.LoggerLib.dll" size="6656">
+      <assemblyIdentity name="Greet.LoggerLib" version="1.3.0.10631" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>crc2fcy+BsG+e2YF7Mbyv1q9IQA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Greet.Model.dll" size="171008">
+      <assemblyIdentity name="Greet.Model" version="1.3.0.10631" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>GZpsuM5TY0HagCsb4FavhfaxHkg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Greet.Plugins.CSVImport.dll" size="51712">
+      <assemblyIdentity name="Greet.Plugins.CSVImport" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>n3UtaZFHj7tOKiG98BgPVL4hrhs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Greet.Plugins.ScenariosMapping.dll" size="1271808">
+      <assemblyIdentity name="Greet.Plugins.ScenariosMapping" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>TYlgsI3wxng/inzGfJjBbguEFyA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Greet.Plugins.StackedCharts.dll" size="196096">
+      <assemblyIdentity name="Greet.Plugins.StackedCharts" version="1.3.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>agvFTmYaCU6mLzuFfzK8BJuPfC8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MathNet.Numerics.dll" size="2556416">
+      <assemblyIdentity name="MathNet.Numerics" version="3.11.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>2BOeIdHEg/vxmlBqmw633N1N4N4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PowerCollections.dll" size="381952">
+      <assemblyIdentity name="PowerCollections" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>iCz0YANcyYG29YNAr1tYRC4PDrg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="XmlDiffPatch.dll" size="100912">
+      <assemblyIdentity name="XmlDiffPatch" version="1.0.8.28" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>dy4O3ytdeccxd0XmoREcKPy8lvg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="BruTile.Desktop.dll" size="25088">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>lroJUIZDoc7dtPpO9cQFbUth3Gc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="BruTile.dll" size="110592">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>t4GZBZIpZ74zojQE1G/RV0Mwzho=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ChangeLog.txt" size="9748">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>EuEbJxR+N9SzQqUhsl8QW1/zVuY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="CodeVendor.Controls.dll" size="24576">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>jRE7IraEOaN6LigS4BTDBrRzxZw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Common.Logging.dll" size="49152">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>63kN3fAmF/HYCzZaUrJOJKO2Vkc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Database\Default.greet" size="15948712">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>v5niFUEpF1K6QAxkpNwnCrK6HkA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="GeoAPI.dll" size="57856">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>IM8vzIoCcS015g5YVv17szlqaFU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Greet.ConvenienceLib.dll" size="24064">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>2zcTI8Icm3iJhmgam2Dw05EeaWs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Greet.DataConverter.dll" size="40960">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>59xHdNSFCaVTiCPs+/k4auKeuvQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Greet.DataStructureV2.dll" size="480256">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>mG+EeQXOXrmbHZFoBFrGJph20Bk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Greet.DataStructureV3.dll" size="516608">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Wic471X5SGaN/jGhcr0PB/dlYdg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Greet.DataStructureV4.dll" size="649728">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>nAwz8FDcIJdBnz6BL5AaSmtNKTw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="greet.exe.config" size="4066">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>wX7H99pEpQ4JRsvK/bM2yloW3lE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Greet.Plugins.Example1.dll" size="16384">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>RYzAdm6KLFLqKj/i+PcvCM0GKCE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Greet.Plugins.Example2.dll" size="16384">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>zd57K4XSzQKVjo6ima7buCC3/fg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Greet.Plugins.Example3.dll" size="10752">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YxII6wPcG4zScM+gGJV3BLaCqxs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Greet.Plugins.Example4.dll" size="18432">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YeOtGM9ClOBm8qzmZfbZXYpt2vA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Greet.Plugins.ExcelTools.dll" size="7628288">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/vHvbAOa4suNENehZgDk8elHwR4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Greet.Plugins.Marine.dll" size="807424">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>WQP+APsbHzarA0w9GmlrL3IStxQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Greet.Plugins.MergingXML.dll" size="634880">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>1SDxbfNYGNFFKgpu5K83FnPtKcE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Greet.Plugins.PlaneLib.dll" size="570880">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>wCcP9By9oMX2hOiFCUY63S8NlAY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Greet.Plugins.RevisionControl.dll" size="72704">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>NQJ5uIxwMg5tV+FQ7VvGOwy27C0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Greet.Plugins.ScenariosManager.dll" size="83456">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>2l4jWFczDkhMvc47q7iQgPNMoew=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Greet.Plugins.StLib.dll" size="238592">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YZ/xoKz+mEwnkmgcFosKMG3/8II=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Greet.UnitLib.dll" size="56320">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>JqVnYtobVKhxAoARMytwrUfuQzg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Greet.UnitLib3.dll" size="61952">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>pweTb7tzxcnkVNW+uo0/TPV+AQ8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="JacksonSoft.CustomTabControl.dll" size="61440">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>JKzpgSewzA9rHqVBeP8hD090LTM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="KellermanSoftware.Compare-Net-Objects.dll" size="68096">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>CrLMgnX9ucljx18czadfsz9sYH4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="LibGit2Sharp.dll" size="422400">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Gj41ukduD65Tkq8zsmKm65CMh0Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="NetTopologySuite.dll" size="564736">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>1u2/AGonH4lQcPP1riXJ/aw/crc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Nevron.Chart.dll" size="2428928">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>zALwI/GkEc/XIP/gNIYlI5w8I8k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Nevron.Chart.WinForm.dll" size="135168">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>bRuxirQwM2CGy/LLJiKy7X4qdw0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Nevron.Diagram.dll" size="1372160">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>v3Y5Uk0EXwG/4paKtCKaesbXzDI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Nevron.Diagram.Shapes.dll" size="839680">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>1PVHQymC9VcipeScYEoXBcJ2sw8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Nevron.Diagram.WinForm.dll" size="745472">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>vjJtCj6Ai3T8vF5L982WB46DL2k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Nevron.GraphicsGL.dll" size="2019328">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>RRhQFyuDu52quIQLzEu2mYGhTt8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Nevron.Presentation.dll" size="5513216">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>vuOGJdkxwBIv5j1P+jyB5JAXGEY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Nevron.System.dll" size="700416">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>yZ1wo/xtyPQQ9HqGSlIgx4g0uEk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Newtonsoft.Json.dll" size="391680">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Ot99W3AcLuSvn6p5w2/HJKc6FCc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ProjNet.dll" size="89088">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>F+bAUgWDwsxRwcA1aPbJsQ3ccb8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\greet-file-48.ico" size="9662">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>KclUAWZCBKb/Z4/vmNhKA5xMYz4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\greet-icon.ico" size="9662">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Bz2llLYe6T1A/pVHag2aIE+XlqI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SharpMap.dll" size="472576">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>y/nO8vAdzo9jaQECaCoLbTgXTyI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SharpMap.UI.dll" size="97280">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ozbWPMsmdBjglxw/BElD3pGaJXE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SharpSvn.dll" size="6456832">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>xmMkEfN49TXNxtBzOAbFMETluqI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="System.Data.SQLite.dll" size="299008">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>bKWJtmIscsHX/SITHymK6jdN200=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="UserDocumentation\GREET-Manual.pdf" size="5539395">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>tkxu9IraWaqk/glTTmqL3sFSEsY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="UserDocumentation\GREET-Model.pdf" size="883879">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>uWGD/DFlbPuF7sHKQHRQAI1xfak=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="x64\SQLite.Interop.dll" size="1377792">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>JQoy4mcNXJsjmIIHAh3lh1bgHBA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="x86\SQLite.Interop.dll" size="1135104">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>LSiHg3NqabrIMJau2b+3Z6Kyls0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="XmlDiffPatch.View.dll" size="45056">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>bIFV8pVFbXT79K2ELVRKZhgaAZo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ZedGraph.dll" size="295424">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+o/cTiO84fz4zIww6VNCoOi4wSQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <fileAssociation extension=".greet" description="Greet database file" progid="GREET" defaultIcon="Resources\greet-file-48.ico" xmlns="urn:schemas-microsoft-com:clickonce.v1" />
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=Argonne National Laboratory, OU=ES, O=Argonne National Laboratory, L=Lemont, S=Illinois, C=US" issuerKeyHash="963b53f0793397af7d83ef2e2bcccab7861e7266" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>zXaZiI2kPuPfMcfzi5n5GWNsrqR08QVWfK5yeHWPYwE=</DigestValue></Reference></SignedInfo><SignatureValue>fYAkebQINvfr/4RVjnYwNKiYkGRa9PoCIqXhGbFtGhoCBfW4s021lPft6OueejG6lfHqmSFMyqeDMNVcXmofZdXTYCKmD/Eo9OlejTUVqeiTsmRYe4laSgKRX6VhVFI/3a+NQG5d1+p/CYflncyO+djEW+aI7jvqr1P2GrOmyqjZ5VH5G34vidDKFk8v11/AyE2rh1DbelkWej3sQcJIRkiud4eAVyE+Gz8y3T+JiXYjege7n+IOCnjS78Lk6qkNajNw8hNTY930d4R7loVLdYZTDYn668aRUaBkNQkVHQ9LfRIlGsLL2JrZeSNXRAJK0UqLF0lSuikawSzSOptIkA==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qgJRFzc7m4okO3/CNYMqGeOgxR7p6H759kYwzscnpz6Us8XDFPhy45zDohFQI4X/Xr9IDF33HmROjja31q84NWS1TiuzS9TlGa2SQVZOL9X6Ufngr1RXdLFU+URoibEqXr1sUbZwnmaErrOpKytesGBdf0kE3PWZawwv7pzYO9sJ7PGx/fl8VRaR2j8cXzVvWR5WwwBeRTYQRfIqy1hiTSOWtCxICYlaqhf8Ki6UKb7wg1/kH9fygSoToIgSeiTJFSGyL7iPgyLe/0pj5065wN0jgcc4wl8QiubMIQAalAPyuYqCM504bNXgeLc+Ak+RbOAsvZYJZkz4sceaYroNXw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="01638f757872ae7c5605f174a4ae6c6319f9998bf3c731dfe33ea48d889976cd" Description="" Url=""><as:assemblyIdentity name="greet.exe" version="1.3.0.12862" publicKeyToken="225603010e0cee19" language="en-US" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Argonne National Laboratory, OU=ES, O=Argonne National Laboratory, L=Lemont, S=Illinois, C=US</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>6iqgnBwnI74CHKSSdYbnG19KmCmdEQny2xeOyMr+gHQ=</DigestValue></Reference></SignedInfo><SignatureValue>n+qCnkt15ruiK2OI6j7ftifISDcV4MH8Y46/sa24q6/FPQC7Bf7I9JasF800GzAjYdfHQxWDjVvyqG7Ez5Hj1vT2r/xUt3D7Coohij8akd+GZF60FtxGMnQJ7i+grOFemnbYR3xxd7IBk4CA+MMpLVApog7gt4j3UwBpNS/Db1ROV2dZphjGd6afrSpWtfA/oWZW8z9B4Bu0dfcZgzr1EMdoG8NYs1jG87agixMBYhr0H8G4iCBQzU3gEBVZasB0o1rJaBwl9tiRUkfxFrTItO8Zw1NWkHXCudSOc7RHS0VfHadw/r/AAVtGMrj4UMpkPeC7eZa+rBHH2lyhj/l/mQ==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qgJRFzc7m4okO3/CNYMqGeOgxR7p6H759kYwzscnpz6Us8XDFPhy45zDohFQI4X/Xr9IDF33HmROjja31q84NWS1TiuzS9TlGa2SQVZOL9X6Ufngr1RXdLFU+URoibEqXr1sUbZwnmaErrOpKytesGBdf0kE3PWZawwv7pzYO9sJ7PGx/fl8VRaR2j8cXzVvWR5WwwBeRTYQRfIqy1hiTSOWtCxICYlaqhf8Ki6UKb7wg1/kH9fygSoToIgSeiTJFSGyL7iPgyLe/0pj5065wN0jgcc4wl8QiubMIQAalAPyuYqCM504bNXgeLc+Ak+RbOAsvZYJZkz4sceaYroNXw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIFBDCCA+ygAwIBAgIQGN9U7lgUVSchnLxVZqht3jANBgkqhkiG9w0BAQsFADB/MQswCQYDVQQGEwJVUzEdMBsGA1UEChMUU3ltYW50ZWMgQ29ycG9yYXRpb24xHzAdBgNVBAsTFlN5bWFudGVjIFRydXN0IE5ldHdvcmsxMDAuBgNVBAMTJ1N5bWFudGVjIENsYXNzIDMgU0hBMjU2IENvZGUgU2lnbmluZyBDQTAeFw0xNDA5MDIwMDAwMDBaFw0xNjA5MDIyMzU5NTlaMIGKMQswCQYDVQQGEwJVUzERMA8GA1UECAwISWxsaW5vaXMxDzANBgNVBAcMBkxlbW9udDEkMCIGA1UECgwbQXJnb25uZSBOYXRpb25hbCBMYWJvcmF0b3J5MQswCQYDVQQLDAJFUzEkMCIGA1UEAwwbQXJnb25uZSBOYXRpb25hbCBMYWJvcmF0b3J5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqgJRFzc7m4okO3/CNYMqGeOgxR7p6H759kYwzscnpz6Us8XDFPhy45zDohFQI4X/Xr9IDF33HmROjja31q84NWS1TiuzS9TlGa2SQVZOL9X6Ufngr1RXdLFU+URoibEqXr1sUbZwnmaErrOpKytesGBdf0kE3PWZawwv7pzYO9sJ7PGx/fl8VRaR2j8cXzVvWR5WwwBeRTYQRfIqy1hiTSOWtCxICYlaqhf8Ki6UKb7wg1/kH9fygSoToIgSeiTJFSGyL7iPgyLe/0pj5065wN0jgcc4wl8QiubMIQAalAPyuYqCM504bNXgeLc+Ak+RbOAsvZYJZkz4sceaYroNXwIDAQABo4IBbjCCAWowCQYDVR0TBAIwADAOBgNVHQ8BAf8EBAMCB4AwEwYDVR0lBAwwCgYIKwYBBQUHAwMwZgYDVR0gBF8wXTBbBgtghkgBhvhFAQcXAzBMMCMGCCsGAQUFBwIBFhdodHRwczovL2Quc3ltY2IuY29tL2NwczAlBggrBgEFBQcCAjAZGhdodHRwczovL2Quc3ltY2IuY29tL3JwYTAfBgNVHSMEGDAWgBSWO1PweTOXr32D7y4rzMq3hh5yZjArBgNVHR8EJDAiMCCgHqAchhpodHRwOi8vc3Yuc3ltY2IuY29tL3N2LmNybDBXBggrBgEFBQcBAQRLMEkwHwYIKwYBBQUHMAGGE2h0dHA6Ly9zdi5zeW1jZC5jb20wJgYIKwYBBQUHMAKGGmh0dHA6Ly9zdi5zeW1jYi5jb20vc3YuY3J0MBEGCWCGSAGG+EIBAQQEAwIEEDAWBgorBgEEAYI3AgEbBAgwBgEBAAEB/zANBgkqhkiG9w0BAQsFAAOCAQEAT49+4BwiR0ykHl04csiwa0qtXltGmS+w3CrV453xp+bt1yCgRs/OotFKeFAdPvyu2eJouijF3j9zuBNIFuGJQLb7ngnaFqAOcBjg8M0bLYC9roNrmBUUjFZZTtJGJG+lrCyhbbDHlc/0TqC8t19KvvxV5RnBrxA5ddrmef9pKtKXJ5SV+udFcFUbZvG9HRJlvjIiiSXsG8GRu5z6YIOLd+LCS2/bhpvHQGIhls8RwMwUAaIirkOnc1S+veNBkhaH7ho5uOo1AXzK6WuAsXrhozUxAnx6UU1gGdaJ/BZdKmog7l+rPp3LZMn56UgN7l6zpflGQLRXzdEtfQQTtECdlQ==</X509Certificate><X509Certificate>MIIFWTCCBEGgAwIBAgIQPXjX+XZJYLJhffTwHsqGKjANBgkqhkiG9w0BAQsFADCByjELMAkGA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMR8wHQYDVQQLExZWZXJpU2lnbiBUcnVzdCBOZXR3b3JrMTowOAYDVQQLEzEoYykgMjAwNiBWZXJpU2lnbiwgSW5jLiAtIEZvciBhdXRob3JpemVkIHVzZSBvbmx5MUUwQwYDVQQDEzxWZXJpU2lnbiBDbGFzcyAzIFB1YmxpYyBQcmltYXJ5IENlcnRpZmljYXRpb24gQXV0aG9yaXR5IC0gRzUwHhcNMTMxMjEwMDAwMDAwWhcNMjMxMjA5MjM1OTU5WjB/MQswCQYDVQQGEwJVUzEdMBsGA1UEChMUU3ltYW50ZWMgQ29ycG9yYXRpb24xHzAdBgNVBAsTFlN5bWFudGVjIFRydXN0IE5ldHdvcmsxMDAuBgNVBAMTJ1N5bWFudGVjIENsYXNzIDMgU0hBMjU2IENvZGUgU2lnbmluZyBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJeDHgAWryyx0gjE12iTUWAecfbiR7TbWE0jYmq0v1obUfejDRh3aLvYNqsvIVDanvPnXydOC8KXyAlwk6naXA1OpA2RoLTsFM6RclQuzqPbROlSGz9BPMpK5KrA6DmrU8wh0MzPf5vmwsxYaoIV7j02zxzFlwckjvF7vjEtPW7ctZlCn0thlV8ccO4XfduL5WGJeMdoG68ReBqYrsRVR1PZszLWoQ5GQMWXkorRU6eZW4U1V9Pqk2JhIArHMHckEU1ig7a6e2iCMe5lyt/51Y2yNdyMK29qclxghJzyDJRewFZSAEjM0/ilfd4v1xPkOKiE1Ua4E4bCG53qWjjdm9sCAwEAAaOCAYMwggF/MC8GCCsGAQUFBwEBBCMwITAfBggrBgEFBQcwAYYTaHR0cDovL3MyLnN5bWNiLmNvbTASBgNVHRMBAf8ECDAGAQH/AgEAMGwGA1UdIARlMGMwYQYLYIZIAYb4RQEHFwMwUjAmBggrBgEFBQcCARYaaHR0cDovL3d3dy5zeW1hdXRoLmNvbS9jcHMwKAYIKwYBBQUHAgIwHBoaaHR0cDovL3d3dy5zeW1hdXRoLmNvbS9ycGEwMAYDVR0fBCkwJzAloCOgIYYfaHR0cDovL3MxLnN5bWNiLmNvbS9wY2EzLWc1LmNybDAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwMwDgYDVR0PAQH/BAQDAgEGMCkGA1UdEQQiMCCkHjAcMRowGAYDVQQDExFTeW1hbnRlY1BLSS0xLTU2NzAdBgNVHQ4EFgQUljtT8Hkzl699g+8uK8zKt4YecmYwHwYDVR0jBBgwFoAUf9Nlp8Ld7LvwMAnzQzn6Aq8zMTMwDQYJKoZIhvcNAQELBQADggEBABOFGh5pqTf3oL2kr34dYVP+nYxeDKZ1HngXI9397BoDVTn7cZXHZVqnjjDSRFph23Bv2iEFwi5zuknx0ZP+XcnNXgPgiZ4/dB7X9ziLqdbPuzUvM1ioklbRyE07guZ5hBb8KLCxR/Mdoj7uh9mmf6RWpT+thC4p3ny8qKqjPQQB6rqTog5QIikXTIfkOhFf1qQliZsFay+0yQFMJ3sLrBkFIqBgFT/ayftNTI/7cmd3/SeUx7o1DohJ/o39KK9KEr0Ns5cF3kQMFfo2KwPcwVAB8aERXRTl4r0nS1S+K4ReD6bDdAUK75fDiSKxH3fzvc1D1PFMqT+1i4SvZPLQFCE=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

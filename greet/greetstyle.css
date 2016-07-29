@@ -1,0 +1,46 @@
+
+ul#gtheader {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	width: 100%;
+}
+#gtheader li {
+	display: inline;
+	float: left;
+}
+#gtheader li a {
+    display: block;
+    width: 88px;
+	text-decoration: none;
+	padding: .25em 1em;
+	border-bottom: solid 1px #7ba9d0;
+	border-top: solid 1px #7ba9d0;
+	border-right: solid 1px #7ba9d0;
+}
+#gtheader li a:link, #gtheader li a:visited {
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #4d8abe;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+}
+#gtheader li a:hover {
+    background-color: #7ba9d0;
+}
+
+#gtheader li a:active {
+    background-color: #39f;//#7ba9d0;
+}
+
+h1 {
+	font-size:18px; color:#4d8abe;
+	font-family:Verdana,sans-serif;
+}
+
+a {
+	color: #4d8abe;
+	text-decoration:underline;
+	font-weight:bold;
+}

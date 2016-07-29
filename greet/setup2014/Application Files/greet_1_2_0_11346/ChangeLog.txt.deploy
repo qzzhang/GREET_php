@@ -1,0 +1,198 @@
+﻿2013-10-21 Greet V1.1.0.8943
+- Updated code for faster calculations, using more parallelization
+- Updated API for modules development
+- Added Stochastic module for sensitivity analysis
+-- Added known distributions for resources physical parameters uncertainty and processes efficiencies
+- Added Merging module for database updates and user exchange
+- Added Plane module for well to wake energy intensities
+-- Added know data for different types of planes from GREET
+- Updated parameters management by giving them unique identifiers thoughout the database
+- Added references and sources for 50% of the existing pathways
+- Added multiple new pathways including
+-- Renewable natural gas
+-- Jet fuels
+-- Algae base biofuels
+
+2013-10-14 Greet Beta V1.0.0.8789
+- Fix transportation editor race condition
+- Updated the updates, do not get the XML file version 2
+
+2013-07-09 Greet Beta V1.0.0.8325
+- Fixed vehicle fuel issue
+- Fixed pathway mix cloning issue
+
+2013-07-01 Greet Beta V1.0.0.8325
+- Fixed vehicle results display
+- Prevent from entering inadequate mode losses
+- Display meaningfull message for allocation errors
+- Change mode editor to use selector control like the other data editors
+- MPGGE fix for vehicle
+- Fixed IntPtr issue Transportation process editor
+
+2013-05-30 Greet Beta V1.0.0.8146 (wrong revision number published 8227 is the real revision)
+- Fixed link issue in well to pump
+- Fixed command line tool
+
+2013-05-03 Greet Beta V1.0.0.8146
+- Fixed co-products issue, the formula for calculations used now is the one documented
+- The transfer matrix is only used to trace biogenic carbon content, nothing more
+
+2013-04-22 Greet Beta V1.0.0.8132
+- Updated Modes in the system to allow new modes
+- Fixed new base vehicle addition
+- Updated value display behaviour
+- Updated Pathway Editor to prompt better error messages and filtering processes
+
+2013-03-28 Greet Beta V1.0.0.8079
+- Fixed vehicle year data addition
+
+2013-03-28 Greet Beta V1.0.0.8076
+- Fixed new base vehicle addition
+- Allow the user to overrides the pre-calculated EIs
+- Small button fix in Vehicle parameters
+
+2013-03-26 Greet Beta V1.0.0.8065
+- Fixed CD mode results
+- Bug fix for saving file with europpean regional settings
+- Fixed unit preferences for vehicles results display
+
+2013-03-18 Greet Beta V1.0.0.8044
+- Fixed issue with Regional Preferences for comma as decimal separator 
+- Added Defaut.greet file to the distribution
+- Enhanced multiple vehicles selection by CTRL+Click
+
+2013-03-13 Greet Beta V1.0.0.8027
+- Transportation editor enhanced
+- Resource editor density deletion fixed
+- Saving to file issue resolved
+- Market value allocation resolved
+- Mode payloads list expanded
+
+2013-03-11 Greet Beta V1.0.0.8009
+- Added documentation to the software
+- Transportation editor fixed
+- Deletion of the autosave file on first startup if no internet available fixed
+
+2013-03-04 Greet Beta V1.0.0.7996
+- Data editor selection windows fixed
+
+2013-03-01 Greet Beta V1.0.0.7989
+- Speed up display of vehicle results
+- Creation of new vehicles not crashing
+- Memory leak technology editor fixed
+- Memory leak wtp explorer fixed
+- Transportation process do not save unessary transfer matrix elements
+- Refresh vehicle list in WTP result everytime a new vehicle is added
+- Do not allow a vehicle to be powered by a solid resource
+- Adding a new fuel in the vehicle editor allows to Apply changes
+- Memory leak in simulation parameters fixed
+- Label changes in Exhause emission and tool tip test
+- Baseline ratios are all in percent, not in 0-1 basis
+- Updated 2012 Alberta mix used in oil extraction
+
+2013-02-19 Greet Beta V1.0.0.7950
+- Fix source labels in transfer matrix editor
+- Transportation process editor fixed
+- Payloads for mode are updating their resource names
+- IDs for new object all fixed using timestamps
+
+2012-12-14 Greet Beta V1.0.0.7837
+- Modify Monitor value into Alert value
+- Minor fixes related to text
+
+2012-12-14 Greet Beta V1.0.0.7810
+- Fix DBTextBox again
+- Few bugs in the process editors are fixed
+- Check names and labels for Upstream and Pathways
+- Adding H2 emissions
+- Fix amount ratio to return NaN if output loss is 100%- 
+
+2012-12-12 Greet Beta V1.0.0.7810
+- Fix fuel groups monitor values
+- Fix values boxes again escape and lost focus works now
+- Mix editor shows share type
+
+2012-12-11 Greet Beta V1.0.0.7794
+- Fixed issue with entering new values in boxes
+- Fixed values of 100% showing 10%, issue with legth before decimal point
+- Improvements on BioDiesel pathways, getting closer results to the Excel version
+- Changed layout of I/O relations in stationary process editor
+- Remove the "To Destination" option for modes, as we assume that is the process exists it is to model a transport going somewhere.
+
+2012-12-10 Greet Beta V1.0.0.7778
+- Updated the Corn Stover to EtOH and several EtOH pathways with their CO2 credits.  Also updated the corresponding monitoring values.
+- Updated vehicle results and added links to the fuel production and vehicle editor, search feature and tree organization by major fuel used
+- Updated Biodiesel pathway
+- Added public interfaces for plugin potential usage
+- Fixed exagerated emissions for WTW Urban Emissions results
+- Updated electricity emission factors to EPA standards
+- Fixed the Copy All Values features for the WTP results
+- Remove CO2C gas as this value is included into the GHGs group emissions
+- Allow different shares types for mixes
+- Cleanup unused itens in the database (resources, technologies, processes, pathways and mixes)
+- Updated n-Hexane HV and density
+- Allow the user to enter a payload when non existing yet from the transportation process editor
+- Removed pathway feed option as it brings more confusion than help building pathways
+- Removed min max emissions as it was used exceptionally for only one process in the whole model
+- Change Autosave function, now keeps a copy of the original file right by it instead of using a specific folder
+- Allows the user to save an "unfinished" process, or to change the main input even if dependencies are broken
+- fixed input with share use most frequent upstream for a defined resource
+- ban the user from saving a pathway without any process in it as the software do not handle that very well
+- fixed functional unit button for all levels of depth in WTP editor
+- Added conventional Jet fuels pathway
+- Added LFG/RNG to CNG pathways and processes
+- Updated Methanol from LFG/RFG and LNG
+- Change IDs creation, using date instead of consecutive IDs to avoid conflicts
+- Remove duplicated names for processes, corrected names and removed unused processes
+
+2012-11-14 Greet Beta V1.0.0.7635
+- Co product estimated results fixed, they where showing same results for each co-product
+- New technology will have all values as "default" not "user"
+- Fix registration form crash
+- MeOh production updated
+- Set the "Biomass" flag for many resources that were not properly marked
+- Updated electricity technologies emission factors
+- Fixed old losses display, there is no way to add old losses but we can still visualize them. They should be all converted soon
+- Output mix and vehicles results in the Results to XML file
+- Modified phosphoric acid pathway
+- Added soybean density and modifying soyoil pathway
+- Added several physical parameters for primary resources used in Bio Oil production
+- Stationary Process editor "transfer matrix editor" fixed
+- Added public interfaces for plugin use
+- Changed vehicle classification, vehcile are organized by main fuel, need to add technology type for each of the modes
+- Modeling year moved outside of the input parameter tables as it causes more trouble in the code than gains for anyone
+- Input table editor a little bit easier to use by cleaning it up
+
+2012-10-23 Greet Beta V1.0.0.7542
+- Unified names of the data tables, added notes for the tables and tooltip for the cells
+- Fixed upstream editor fixed default unit of the resources
+- Fixed issue with the stationary editor preventing the insertion of special items
+- Updating emission factors for SMR technologies in G.H2 and L.H2 from Coal, NG, EtOH, MeOH (DATABASE UPDATE)
+- Removed "prefered unit" attribute for electricity
+- Allow to add a fixed values upstream to be used as a feed for a pathway
+- Credit for biogenic CO2 is taken into account at the vehicle level.
+- Pathway editor, process suggestion updated. Do not show processes that can't be inserted in the pathway.
+- Fixed bug after filling up the registration form
+
+2012-10-09 Greet Beta V1.0.0.7491
+- Fix log file fake errors detected while loading the software
+- Renaming the input tables, single name + notes for each table
+- Pathway mix editor fixed for creating new mix
+- Fix representation of legacy loss on processes
+- Merged command line and main executable
+
+2012-09-12 Greet Beta V1.0.0.7459
+- Fix formula editor issue for global parameters
+
+2012-09-12 Greet Beta V1.0.0.7456
+- Fix time series bug, the closest year was not picked up everytime
+- Added conditions notes to the resource editor, index tab order changed for the input boxes
+- Add as new was missing in for pathway mix, button added
+- Units are not case sensitive during data entry
+- Fix numerous small bugs in the software
+
+2012-09-12 Greet Beta V1.0.0.7358
+- Renaming a lot of labels "Materials" to "Resources" as agreed
+- Data updated for Coal to Gaseous Hydrogen in order to reflect changes from 2012 version of Greet Excel
+- Clearing properly the internal memory before reloading a project, if the project is corrupted closing the software
+- Cleaned up the notes in the database

@@ -1,0 +1,27 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>Insert article</title>
+</head>
+<body style="background-color:rgb(235,235,235)">
+<h2>Submit your publication</h2>
+<form action="insert.php" method="POST" enctype="multipart/form-data">
+	<p>
+		<p>Title <input type="text" name="Title" id="title_insert"></p>
+		<p>Author <input type="text" name="Author" id="author_insert"></p>
+		<p>Abstract</p><p> <textarea name="Abstract" rows="10" cols="50"></textarea></p>
+		<p>Location <input type="text" name="Link" id="link_insert"></p>
+		<p>Upload (max 15Mo)<input type="file" name="upfile" id="upfile"></p>
+		<p>Group</p>
+		<select name="group">
+			<option value="GMR">GREET Model Reports</option>
+			<option value="TP">Technical Publications</option>
+			<option value="SGP">Selected GREET Presentations</option>
+			<option value="B">Brochures</option>
+		</select>
+		<p><input type="submit" value="submit publication"></p>
+	</p>
+</form>
+
+</body>
+</html>

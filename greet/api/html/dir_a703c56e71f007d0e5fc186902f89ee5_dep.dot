@@ -1,0 +1,13 @@
+digraph "C:/Users/ddieffenthaler/Desktop/SVN/source/greet-dev/main" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_57dbee2aefe90057220505cdbd10e38d {
+    graph [ bgcolor="#ddddee", pencolor="black", label="greet-dev" fontname="Helvetica", fontsize="10", URL="dir_57dbee2aefe90057220505cdbd10e38d.html"]
+  subgraph clusterdir_a703c56e71f007d0e5fc186902f89ee5 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_a703c56e71f007d0e5fc186902f89ee5.html"];
+    dir_a703c56e71f007d0e5fc186902f89ee5 [shape=plaintext label="main"];
+    dir_94e7e0f9e27b79ced3190fb22e4ca476 [shape=box label="PlugInsInterfaces" color="red" fillcolor="white" style="filled" URL="dir_94e7e0f9e27b79ced3190fb22e4ca476.html"];
+  }
+  }
+}

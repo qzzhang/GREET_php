@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PlugInsInterfaces.DataTypes.\lResource.IInputResourceReference",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_plug_ins_interfaces_1_1_data_types_1_1_resource_1_1_i_input_resource_reference.html",tooltip="Defines a reference to an input source, if a process has an input coming from a pathway this will rep..."];
+}

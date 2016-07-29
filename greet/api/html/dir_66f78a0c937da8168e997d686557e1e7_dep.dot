@@ -1,0 +1,9 @@
+digraph "C:/Users/ddieffenthaler/Desktop/SVN/source/greet-dev/main/PlugInsInterfaces/DataManipulation/Pathway" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_4447585ba52742a0dc2cedb93a1eef48 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="DataManipulation" fontname="Helvetica", fontsize="10", URL="dir_4447585ba52742a0dc2cedb93a1eef48.html"]
+  dir_66f78a0c937da8168e997d686557e1e7 [shape=box, label="Pathway", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_66f78a0c937da8168e997d686557e1e7.html"];
+  }
+}

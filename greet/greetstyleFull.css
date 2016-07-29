@@ -1,0 +1,101 @@
+a:link {
+color:#59a324;
+text-decoration:underline;
+font-weight:bold;
+}
+a:hover {
+color:#59a324;
+text-decoration:underline;
+font-weight:bold;
+}
+a:visited {
+color:#59a324;
+text-decoration:underline;
+font-weight:bold;
+}
+
+body {
+background-image:url("pic/header_graphic.png");
+background-position:center top;
+background-repeat:no-repeat;
+font-size:13px; 
+font-family:Verdana,sans-serif}
+
+div#liline {
+color:#59a324;
+font-weight:bold;
+font-size:14px; 
+font-family:Verdana,sans-serif
+}
+
+div#top {
+padding-top: 180px; 
+margin-left: auto; 
+margin-right: auto; 
+margin:0 auto;
+width: 650px;
+}
+
+div#lisec {
+color:#000000;
+font-size:13px; 
+font-family:Verdana,sans-serif
+}
+
+div#content{
+margin-left: auto;
+margin-right: auto;
+width: 650px;
+}
+
+div#image{
+background: rgb(243, 243, 243);
+padding: 5px;
+margin: 10px;
+border-style: solid;
+border-width:1px;
+border-color:rgb(190, 190, 190);
+}
+
+div#bottom
+{
+background: rgb(204, 204, 204);
+/* gecko based browsers */
+background: -moz-linear-gradient(left, #cccccc, #f3f3f3);
+/* webkit based browsers */
+background: -webkit-gradient(linear, left center, right center, from(#cccccc), to(#f3f3f3));
+color: #000000; /* text colour (black) */
+height: auto; /* gradient uses the full height of the element */
+padding: 5px; /* distance from border edge to text */
+}
+
+#footer-legal li a{color:grey ;font-size:60%; margin: 0px 0; padding: 0px 0px;}
+#footer-legal li {margin: 0px 0; padding: 0px}
+#footer-legal ul {margin: 0px 0; padding: 0px 15px;
+list-style-type: none;
+}
+#footer-legal h5 a{background:none;color:#fff !important;display:list-item;height:50px;list-style-image:url('http://www.anl.gov/sites/all/themes/anl/images/footer_doe.png');list-style-position:inside;margin:0 !important;padding:0 !important;text-indent:0;width:200px;}
+
+h1 {
+font-size:18px; color:#59a324;
+font-family:Verdana,sans-serif
+}
+
+li { margin: 5px 0; padding: 0;
+}
+
+li.arrow {
+list-style-type: none;
+background: url("pic/li.png") no-repeat top left;
+padding-left: 15px;
+font-family:Verdana,sans-serif
+}
+
+p {
+font-size:13px; color:#000000;
+font-family:Verdana,sans-serif
+}
+
+ul { margin: 0px 0; padding: 0px 15px;
+list-style-type: none;
+}

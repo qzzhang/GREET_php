@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="greetstyle.css" />
+<title>GREET - Batch tools</title>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40965405-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body style="" lang="EN-US">
+<a href="index.htm">
+<div id="top">
+</div></a>
+<div id="content">
+<table border="0">
+<tbody>
+<tr>
+<td>
+<h1>Comparing results</h1>
+<p>The purpose of this webpage is to show in a couple of steps how to compare results between Excel and .net efficiently</p>
+<p>Please read the page entirely at first</p>
+<h2>Step 1: Download the tool</h2>
+<table width="100%" border="0" cellspacing="0" style="width:100%;">
+<tr>
+<td >
+<p>
+Please start downloading the tool <a href="BatchTool.zip"/>by clicking here</a>. Then open the zip file and copy all the files into a folder.
+In that folder you should now have the following files:<br><br>
+<img style="padding: 6px 0px;" src="pic/batch-files.png" ></img>
+</p>
+<h2>Step 2: Set your preferences</h2>
+<p>
+Please edit the file Inputs.txt in order to select which years you want to run the simulations for and which pathways and mixes results you wish to save.<br>
+In order to do so, open the Inputs.txt file with a text editor of your choice, for example use Notepad:<br><br>
+<img style="padding: 6px 0px;" src="pic/batch-inputs.png"></img>
+</p>
+<p>
+In that file you have to perform the following changes:
+<ul>
+<li>1. Change the path of the file so that it corresponds to the location of the GREET file on your computer (probably you just need to change the username in the path)</li>
+<li>2. Set the unit for emissions results, you can leave the default to grams so that it matches results in Excel</li>
+<li>3. Set the unit for resources results, you can leave the default to Btu so that it matches results in Excel</li>
+<li>4. Set the unit for emissions volumes results, you can leave the default to gallons so that it matches water results in Excel</li>
+<li>5. Enter the simulation years you want to run the simulations for separated by a comma</li>
+<li>6. Enter each pathway ID or mix ID you want to save the results for.<br><br>In that example the first line will save the results for pathway 'p' ID 53626780, using the functional unit: 1 mmBtu.<br><br>You can also save mixes results by preceding the ID with the letter 'm'.<br><br>You can skip the functional unit in which case the functional unit saved into the pathway will be used.</li>
+</ul>
+</p>
+<h2>Step 3: Run the tool</h2>
+<p>This is the easiest part, just run the tool by double clicking 'CalculatorBatch.exe'</p>
+<img style="padding: 6px 0px;" src="pic/batch-run.png"></img><br>
+Then let the application run all the simulations years:<br><br>
+<img style="padding: 6px 0px;" src="pic/batch-running.png"></img>
+<h2>Step 4: Open the Results.csv file with Excel</h2>
+<p>In the same folder as 'CalculatorBatch.exe' you should now see a file called 'Results.csv' please open it using Excel</p>
+<img style="padding: 6px 0px;" src="pic/batch-resultsfile.png"></img><br><br>
+You'll see that this file contains the data for the pathways you selected, and also placeholder to paste the results from Excel.
+Now you just have to go to Excel and run as many simulations as needed to fill out the data.<br>
+<b>WARNING:</b> The Results.csv file is overwritten by the batch tool, so save it with another name if you do not want to loose the work you did by manually copy pasting from Excel.
+<img style="padding: 6px 0px;" src="pic/batch-compare.png"></img><br><br>
+<b>Column A:</b> The names of the pollutants and resources groups in the first column<br><br>
+<b>Column B-J:</b> The simulation results for different years in.net<br><br>
+<b>Column L-T:</b> The placeholder for Excel results for different years<br><br>
+<b>Column V-AD:</b> The relative difference between the results<br><br>
+<p><b>Tips:</b> Add the color coding of your choice to make the results easier to see. We usually use the absolute values of the relative differences for conditional formatting.</p>
+</td>
+</tr>
+
+</table>
+
+
+
+</td>
+</tr>
+
+</tbody>
+</table>
+<div id="footer-legal">
+<br>
+<div style="float: left">
+<img style="padding: 6px 0px;" src="pic/footer_doe.png" ></img>
+</div>
+<div style="float: right">
+<img src="pic/anl.png" height="60"></img>
+</div>
+<div style="text-align: center;">
+<ul>
+  <li><a href="http://science.energy.gov/">U.S. Department of Energy Office of Science</a></li>
+  <li><a href="http://www.uchicagoargonnellc.org/">UChicago Argonne LLC</a></li>
+  <li><a href="http://www.anl.gov/privacy-security-notice">Privacy & Security notice</a></li>
+</ul>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PlugInsInterfaces.DataTypes.\lIUnitGroup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_plug_ins_interfaces_1_1_data_types_1_1_i_unit_group.html",tooltip="A unit group represents &quot;energy&quot; or &quot;volume&quot; the default unit used are the unit used by the calcu..."];
+}

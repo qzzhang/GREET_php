@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2" />
+    </startup>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="DataServiceSoap">
+                    <security mode="Transport" />
+                </binding>
+                <binding name="DataServiceSoap1" />
+                <binding name="GreetUsersServiceSoap">
+                    <security mode="Transport" />
+                </binding>
+                <binding name="GreetUsersServiceSoap1" />
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="https://greet.es.anl.gov/webservice/DataService.asmx"
+                binding="basicHttpBinding" bindingConfiguration="DataServiceSoap"
+                contract="GreetDataService.DataServiceSoap" name="DataServiceSoap" />
+            <endpoint address="https://greet.es.anl.gov/webservice/UsersRegistration.asmx"
+                binding="basicHttpBinding" bindingConfiguration="GreetUsersServiceSoap"
+                contract="GreetUserRegistrationService.GreetUsersServiceSoap"
+                name="GreetUsersServiceSoap" />
+        </client>
+    </system.serviceModel>
+</configuration>

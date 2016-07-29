@@ -1,0 +1,51 @@
+Here's a check-list for file uploading in PHP:
+
+Check php.ini for:
+file_uploads = On
+post_max_size = 100M
+upload_max_filesize = 100M
+
+You might need to use .htaccess or .user.ini if you are on shared hosting and don't have access to php.ini.
+Make sure you’re editing the correct ini file – use the phpinfo() function to verify your settings are actually being applied.
+Also make sure you don’t misspell the sizes - it should be 100M not 100MB.
+Make sure your <form> tag has the enctype="multipart/form-data" attribute. No other tag will work, it has to be your FORM tag. Double check that it is spelled correctly. Double check that multipart/form-data is surrounded by STRAIGHT QUOTES, not smart quotes pasted in from Word OR from a website blog (WordPress converts straight quotes to angle quotes!). If you have multiple forms on the page, make sure they both have this attribute. Type them in manually, or try straight single quotes typed in manually.
+
+Make sure you do not have two input file fields with the same name attribute. If you need to support multiple, put square brackets at the end of the name:
+
+<input type="file" name="files[]">
+<input type="file" name="files[]">
+Make sure your tmp and upload directories have the correct read+write permissions set. The temporary upload folder is specified in PHP settings as upload_tmp_dir.
+
+Make sure your file destination and tmp/upload directories do not have spaces in them.
+
+Make sure all <form>'s on your page have </form> close tags.
+
+Make sure your FORM tag has method="POST". GET requests do not support multipart/form-data uploads.
+
+Make sure your file input tag has a NAME attribute. An ID attribute is NOT sufficient! ID attributes are for use in the DOM, not for POST payloads.
+
+Make sure you are not using Javascript to disable your <input type="file"> field on submission
+
+Make sure you're not nesting forms like <form><form></form></form>
+
+Check your HTML structure for invalid/overlapping tags like <div><form></div></form>
+
+Also make sure that the file you are uploading does not have any non-alphanumeric characters in it.
+
+Once, I just spent hours trying to figure out why this was happening to me all of a sudden. It turned out that I had modified some of the PHP settings in .htaccess, and one of them (not sure which yet) was causing the upload to fail and $_FILES to be empty.
+
+You could potentially try avoiding underscores (_) in the name="" attribute of the <input> tag
+
+Try uploading very small files to narrow down whether it's a file-size issue.
+
+Check your available disk space. Although very rare, it is mentioned in this PHP Manual page comment:
+
+
+E:\InetPub\Greet_Temp
+	E:\InetPub\Greet_Temp
+
+E:\InetPub\Greet-Test/Greet_Temp/ 
+
+ E:\InetPub\Greet-Test/public/
+
+		

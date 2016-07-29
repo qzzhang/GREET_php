@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="greet.exe" version="1.1.0.9706" publicKeyToken="9b2fffc34f853ce3" language="en-US" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Resources\greet-icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="greet" version="1.1.0.9706" language="neutral" processorArchitecture="msil" />
+    <commandLine file="greet.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="greet.exe" size="37376">
+      <assemblyIdentity name="greet" version="1.1.0.9706" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>eb3RIkgTprOPPiDoawwYHMql+lI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Gui.dll" size="2119680">
+      <assemblyIdentity name="Gui" version="1.1.0.9706" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>tbJ/BrQOI612F4nogvvz8r6YNGg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MergingXML.dll" size="481792">
+      <assemblyIdentity name="MergingXML" version="1.0.0.9288" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>sL1tOppQEXMGl2Q4fYA7sgKQJgc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Model.dll" size="844288">
+      <assemblyIdentity name="Model" version="1.1.0.9706" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>AQfaJi1Dlz1oWeD+rpQ7cIBOJrM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PlaneLib.dll" size="734720">
+      <assemblyIdentity name="PlaneLib" version="1.0.0.9288" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>GfA16MhCCVck7rpWFIXf6qFE4uk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PlugInsInterfaces.dll" size="23552">
+      <assemblyIdentity name="PlugInsInterfaces" version="1.1.0.9706" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>B0ocm6GLALk70fK9nEPhTKAWEPo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StLib.dll" size="170496">
+      <assemblyIdentity name="StLib" version="1.0.0.9288" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ElNvv9dAuddNy0UY1Inb0lMpImA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ZedGraph.dll" size="307200">
+      <assemblyIdentity name="ZedGraph" version="5.1.5.28844" publicKeyToken="02A83CBD123FCD60" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>BMwQ/MmSgKzmPpgjmSJ/V+P2YN8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ChangeLog.txt" size="9748">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>EuEbJxR+N9SzQqUhsl8QW1/zVuY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Database\Default.greet" size="4916611">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>h0lhiF2CcItuJW4AETN+qIZlC2g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="greet.exe.config" size="2090">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/AbczFXWEasEsALyoFkLGsjQV8Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\greet-file-48.ico" size="9662">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>KclUAWZCBKb/Z4/vmNhKA5xMYz4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\greet-icon.ico" size="9662">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Bz2llLYe6T1A/pVHag2aIE+XlqI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="UserDocumentation\GREET-Manual.pdf" size="3694601">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>HtaeYepaenRjM0QypoclKoMy0zE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="UserDocumentation\GREET-Model.pdf" size="879862">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8EeRhymK+onIOnBi8txVBEvYv7A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="x64\SQLite.Interop.dll" size="1094656">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8IPSbcZsrYcMI1zTHS4loRBkF2g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="x86\SQLite.Interop.dll" size="852992">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>nSNsnaqedEinDGRcnfcijo/REiY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <fileAssociation extension=".greet" description="Greet database file" progid="GREET" defaultIcon="Resources\greet-file-48.ico" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns="urn:schemas-microsoft-com:clickonce.v1" />
+  <compatibility xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+  <publisherIdentity name="CN=ANL_Greet" issuerKeyHash="3e9d2e842a3ac7a13e33ee1dee1288c2442b1d5b" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" />
+<Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>mCEZSPCbXNBdOW+SP7RnrKp17Co=</DigestValue></Reference></SignedInfo><SignatureValue>p7mD18TpYjki1YsM7FT/rBXtFX41HPX8lThuSCbj9ZaVoAvZZIeYaEg/muCd3H2IrfRO2LwddsMDHeytkGkOdWoJTgAo4EeRYnwCtCMXf9t082gJvogx3qqdBsh6EdNfW7aHRLVzKBe6xDJABSgJyDLb7QyhsQNkPCV73u6m4LY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>vyCpmant7J3DsUeKOQ5ndx/ULjXGPPZoRz7fqyINzkrnCqLDzMw9ChcymDhigOIvF2HUq+caDfpk56SX7IM46Q9apBeezhd35Bn5ZX1EL4ZKiCetZhvu4hcwId8TcRONIWqCKyRLQwOz9WYlXE2SSBGzoKe6Zu+glsljaJN7WeE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="2aec75aaac67b43f926f395dd05c9bf048192198" Description="" Url=""><as:assemblyIdentity name="greet.exe" version="1.1.0.9706" publicKeyToken="9b2fffc34f853ce3" language="en-US" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ANL_Greet</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>1tXGE+p3zkaT0gL6mAdE1otG2hw=</DigestValue></Reference></SignedInfo><SignatureValue>WIpNkP19EGBv+asz8ugEXJ/PgtWVJfKLF3LXGSeV2N3ETPJ22oSiI7TtRjhwgK8+uxNbCJ649Pi8EWwteF47kYxFZ/6OoHcVpgjKub9CjRq51KwIIepPoXGajTzIqyOxIkQvKU4i5+nwQpEJ3DPQSJOvIvkf8e63Gk4Ra58SQTw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>vyCpmant7J3DsUeKOQ5ndx/ULjXGPPZoRz7fqyINzkrnCqLDzMw9ChcymDhigOIvF2HUq+caDfpk56SX7IM46Q9apBeezhd35Bn5ZX1EL4ZKiCetZhvu4hcwId8TcRONIWqCKyRLQwOz9WYlXE2SSBGzoKe6Zu+glsljaJN7WeE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICCTCCAXagAwIBAgIQTRKYDpGuAoBLYVDwm2OK8TAJBgUrDgMCHQUAMB0xGzAZBgNVBAMeEgBBAE4ATABfAEcAcgBlAGUAdDAeFw0xMjEyMjQwMDI0MDVaFw0zOTEyMzEyMzU5NTlaMB0xGzAZBgNVBAMeEgBBAE4ATABfAEcAcgBlAGUAdDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAvyCpmant7J3DsUeKOQ5ndx/ULjXGPPZoRz7fqyINzkrnCqLDzMw9ChcymDhigOIvF2HUq+caDfpk56SX7IM46Q9apBeezhd35Bn5ZX1EL4ZKiCetZhvu4hcwId8TcRONIWqCKyRLQwOz9WYlXE2SSBGzoKe6Zu+glsljaJN7WeECAwEAAaNSMFAwTgYDVR0BBEcwRYAQTTYvaIRbM0vKINBagPHgTqEfMB0xGzAZBgNVBAMeEgBBAE4ATABfAEcAcgBlAGUAdIIQTRKYDpGuAoBLYVDwm2OK8TAJBgUrDgMCHQUAA4GBAHyGxvW2d9zkC4imO3Us13ASMS2sc1Z7Q0pl0N9Lp8ove86/mQH4Qe2dqmt13Imm6Kvqud/9qoV5yCwODjx6Pt9vCmCLRvAMi2fHLI10my7wI8HgTlM6c64n0cKRxN8knrw15hVlW4ZxkyYIZudTfJFw9sqt/2D/2CJ0l+N2dpvH</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -1,0 +1,33 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PlugInsInterfaces.DataTypes.\lIXmlObj",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_plug_ins_interfaces_1_1_data_types_1_1_i_xml_obj.html"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PlugInsInterfaces.DataTypes.IGas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_plug_ins_interfaces_1_1_data_types_1_1_i_gas.html",tooltip="A gas as represented in GREET "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PlugInsInterfaces.DataTypes.\lIGroup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_plug_ins_interfaces_1_1_data_types_1_1_i_group.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PlugInsInterfaces.DataTypes.\lIInputTable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_plug_ins_interfaces_1_1_data_types_1_1_i_input_table.html",tooltip="An input table containing various cells and possibly formulas within these cells "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PlugInsInterfaces.DataTypes.\lILocation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_plug_ins_interfaces_1_1_data_types_1_1_i_location.html",tooltip="Class that represents a location for a transportation process "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PlugInsInterfaces.DataTypes.\lIPicture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_plug_ins_interfaces_1_1_data_types_1_1_i_picture.html",tooltip="Image that is stored in GREET "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PlugInsInterfaces.DataTypes.\lMix.IMix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_plug_ins_interfaces_1_1_data_types_1_1_mix_1_1_i_mix.html",tooltip="A mix defines fuel production entities and shares for them "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PlugInsInterfaces.DataTypes.\lPathway.IPathway",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_plug_ins_interfaces_1_1_data_types_1_1_pathway_1_1_i_pathway.html",tooltip="Representation of a Pathway "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="PlugInsInterfaces.DataTypes.\lProcess.IProcess",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_plug_ins_interfaces_1_1_data_types_1_1_process_1_1_i_process.html"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="PlugInsInterfaces.DataTypes.\lProcess.Transportation.IAMode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_plug_ins_interfaces_1_1_data_types_1_1_process_1_1_transportation_1_1_i_a_mode.html",tooltip="Mode type for a transportation process, defines EIs, transported resources and payloads if applicable..."];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="PlugInsInterfaces.DataTypes.\lResource.IEvaporatedGas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_plug_ins_interfaces_1_1_data_types_1_1_resource_1_1_i_evaporated_gas.html"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="PlugInsInterfaces.DataTypes.\lResource.IResource",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_plug_ins_interfaces_1_1_data_types_1_1_resource_1_1_i_resource.html",tooltip="The resource object contains the physical property and the name of a resource "];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="PlugInsInterfaces.DataTypes.\lTechnology.ITechnology",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_plug_ins_interfaces_1_1_data_types_1_1_technology_1_1_i_technology.html",tooltip="A technology that contains emission factors for a given resource used "];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="PlugInsInterfaces.DataTypes.\lVehicle.IVehicle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_plug_ins_interfaces_1_1_data_types_1_1_vehicle_1_1_i_vehicle.html",tooltip="Representation of a vehicle in GREET "];
+}

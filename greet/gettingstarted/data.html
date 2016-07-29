@@ -1,0 +1,184 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../greetstyleFull.css" />
+<title>GREET - Free and maintained</title>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40965405-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body style="" lang="EN-US">
+<a href="../index.htm">
+<div id="top">
+</div></a>
+<div id="content">
+<table border="0">
+<tbody>
+<tr>
+<td>
+<h1>Data Editors</h1>
+<p>
+The data editors are essential to modify the content of the database and add new instances of entities that the database does not already contain. For example,
+the user can add a new pathway or edit an existing resource. 
+</p>
+<p>
+The GREET model is built around essential entities that are Resources, Emissions, Technologies, Processes, Pathways and Mixes: these constitute the Well to Product (or 
+well to pump) part of the calculations. Then other entities such as Vehicles, Planes, and Ships are modelled to re-use the upstream results from the model.
+<div id="image" style="float: left;"><img alt="Building blocks of the GREET model" src="pics/data-pyramid.png" style="border: 0px none ; margin-top: 3px;" width="600">
+<br><div style="font-size:80%">Building blocks of the GREET model</div>
+</div>
+</p>
+<h2>Resources</h2>
+We assume resources to be elements used in flows between processes and pathways. They can be energy types (electricity), natural resources (crude oil), products (ethanol) or chemicals (fertilizers). 
+There is basically no limit to how many or what resources can be, but we assume that each of the resource can be quantified into one of the following dimensions:
+<ul>
+<li>Mass</li>
+<li>Volume</li>
+<li>Energy</li>
+</ul>
+Resources have physical properties for a given temperature, pressure and state. However physical properties are not calculated throughout the model, therefore the user could 
+create multiple resources called "natural gas" at different temperatures and pressure.<br>
+We also create resources for "Electricity", "Solar Energy", and "Hydro Energy", whatever we need to "track" as a flow in the model is created as a resource.
+<br><br>
+Resources have physical properties that are important as they allow us to make automatic conversions between mass, volume, energy, and market value. Without these properties
+it is still possible to build pathways, but entering the data becomes less flexible.
+<br><br>
+<b>Note:</b> Resources are also used for the outputs of processes and pathways, thus we do not make a technical distinction between "products" and "resources". However 
+we do track which resources are "Primary Resources", they are the ones we extract from our environment and we want to keep track of. For example Crude Oil and Iron Ore are 
+considered Natural Resources.
+
+<h2>Emissions</h2>
+Emissions are gases or other types of pollutants that can be released in nature as a results of the production of some product. Emissions are most of the time emitted because 
+of combustion technologies, but non combustion emissions can also be defined in the processes.
+<br><br>
+Emissions have physical properties that are important for emission calculations:
+<ul>
+<li>- Carbon Ratio</li>
+Necessary to perform the carbon balance, means that all the carbon that comes in, is converted in VOC, CH4 and CO2 emission factors
+<li>- Sulfur Ratio</li>
+Necessary to perform the sulfur balance, means that SOx emission factors can be calculated automatically 
+<li>- Global Warming Potential</li>
+Expresses relatively to the CO2 GWP (GWP for CO2 is one), this allows for the calculation the Greenhouse Gases Equivalent or CO2e for all the upstream.
+</ul>
+<br><br>
+Emissions are frequently used in technologies expressed in mass per amount of energy combusted
+
+<h2>Technologies</h2>
+
+Technologies can be seen as a matrix of emission factors organized per emission and per year. We have probably as many emission factors defined every 5 years as we have technologies
+defined for a default year (year 0 is considered default when no time series data is available)
+<br><br>
+Technologies must define a resource combusted (or used as an input) and emission factors relatively to that resource. For example the emission factors for a natural gas boiler
+are going to be different than the emissions factors for a residual oil boiler. Most of the time though, we leave the SOx and CO2 emission factors to be balanced automatically
+by the software using the carbon and sulfur ratio of the emission, as well as the carbon and sulfur ratio of the resource combusted and other emission factors already defined by the user.
+<br><br>
+Technologies are used whenever a resource is combusted: typically in the inputs of a stationary process, but also in the transportation modes such as the engine of a train or ocean tanker.
+<br><br>
+A important feature to know is that Technologies are able to know the ratio of biogenic carbon in the burned resource by analyzing the upstream linked to the production of that resource.
+For example Ethanol production is largely based on biofuels, therefore the biongenic carbon content of the Ethanol produced in the US contains almost 100% of biogenic carbon (a little less
+if we blend it with a denaturant such as gasoline). If emission factors are defined for a technology using Ethanol (for example combusting ethanol in an internal combustion engine) the CO2 emitted
+in the atmosphere will be a negative value due to it's biogenic nature.
+
+<h2>Processes</h2>
+
+A process define a system boundary where flows of resources are coming in, and flows of products and emissions are coming out. Overall in GREET we set the system boundaries at a pretty high level.
+Plants usually define our system boundaries, and for these, we account all the resources they use, and all the products and emissions they release. Some more detailed level is achievable as well,
+for example steel production is detailed by sub-process within the steel mill (Sinter, furnace, rolling, casting, extrusion...). 
+
+The processes in GREET are defined by: 
+<ul>
+<li>- Inputs</li>
+Each input must define a resource and a quantity, and a source ("Well" if no upstream, "Previous Process", "Pathway" or "Mix" if this input is coming from the output of another entity)
+<li>- Outputs</li>
+Each output must define a resource and a quantity. Moreover one of the outputs must be declared as "Main Output" and if other exists, the user can choose to allocate by mass, energy, 
+volume or market value, or choose displace an equivalent product. In that case we declare these outputs as "Co-Products"
+<li>- Technologies</li>
+Technologies can only be used on Inputs. Multiple technologies can be used for the same input, in which case an allocation share will be necessary. For example Natural Gas can be used to
+ run a boiler and a turbine within the same process
+ <li>- Other Emissions</li>
+ Emissions that are not calculated based on input quantities and technologies emission factors. These emissions may be the results of a chemical reaction, or to balance measured emission with 
+ the theoretical emissions of the technologies.
+</ul>
+
+Processes are the main building blocks of a pathway, once the processes are created, they can be inserted in  pathway and the pathway editor can be used to define the flows between inputs and outputs.
+
+<h2>Pathway</h2>
+<p>
+Pathways are a structure that we use to account for a series of processes that are used to produce one or more final product from one or more feedstock. For example Ethanol can be produced from different
+types of Sorghum, thus in GREET, a pathway Ethanol from Sorghum allows the user to see the chain of processes and events in the manufacturing of Ethanol from these types of feedstock.
+</p>
+<p>
+The general structure behind a pathway is an oriented graph that can be cyclic. Thus complex pathways can be used to represent sub-processes within a large and complex manufacturing process. For example
+one could imagine a pathway used to represent a refinery. This pathway would include multiple processes such as Distillation, Hydrocracking, Alkylation, Polymerization... and multiple outputs such as 
+Gasoline, Solvants, Jet Fuel, Residual Oil....
+</p>
+<p>
+Pathways can also be reused as a feedstock in other pathways. For example "Corn Production" is a pathway that is reused as a feed into "Ethanol Production from Corn". This capability allows the user
+to gain a lot of time reusing existing entities. In order to do that, simply drag and drop a pathway in the pathway editor instead of dragging a process. The only difference is that a pathway will
+have no inputs represented visually, only outputs of a pathways can be linked to other items, such as processes inputs.
+</p>
+<h2>Mix</h2>
+<p>
+In many cases, such as ethanol production, electricity production or others, there are different ways of producing a very similar product. In this case, multiple pathways may exists such as "Electricity
+from Natural Gas", "Electricity from Nuclear Plant",... We can then decide to create regional mixes for electricity production: In the US we distinguish twelve main regions, for each region electricity 
+is produced using different shares for each of the technologies. 
+</p>
+<p>
+Mix were designed to perform a weighted average of multiple pathways, however mixes can also be reused into other mixes. Basically there is not difference between weight averaging the upstream results associated
+with a mix to weight averaging the results associated with a pathway.
+</p>
+<p>
+As pathways are able to chain processes, and use other pathways as feedstock, mixes can also be used as a feedstock in a pathway, and then, linked to the input of a process. This allows for example to use
+"Distributed Electricity Produced in U.S." into other pathways that may need this product. The difference between using a mix or a pathway as a feedstock for another pathway is that mixes have only a single output.
+</p>
+<p>
+Finally mixes can be used to create blends: If two resources are marked as "Compatible" they can be blended together in a mix. However we try to discourage this practice and perform the blends into a stationary process instead.
+</p>
+<h2>Vehicles</h2>
+<p>
+Vehicles are used in the model to calculate the WTW (well to wheels) analysis. They are using the upstream calculated in the WTP (well to pump or well to product) as fuels and considering the eneergy efficency of the vehicle
+and it's emissions, we then aggregate all the results into a single WTW analysis.
+The vehicles are defined by:
+<ul>
+<li>- An energy efficiency</li>
+In MPG or l/100km
+<li>- Fuel used and their upstream by volumetric shares</li>
+Using the existing resources in the well to product
+<li>- Combustion and non-combustion emissions</li>
+Defined per mile accounting for the pollution control systems of the car
+</ul>
+</p>
+<p>
+The results can then be observed in the WTW tab of the software where all vehicles are categorized by fuel used.
+</p>
+</td>
+</tbody>
+</table>
+<div id="footer-legal">
+<br>
+<div style="float: left">
+<img style="padding: 6px 0px;" src="../pic/footer_doe.png" ></img>
+</div>
+<div style="float: right">
+<img src="../pic/anl.png" height="60"></img>
+</div>
+<div style="text-align: center;">
+<ul>
+  <li><a href="http://science.energy.gov/">U.S. Department of Energy Office of Science</a></li>
+  <li><a href="http://www.uchicagoargonnellc.org/">UChicago Argonne LLC</a></li>
+  <li><a href="/privacy-security-notice">Privacy & Security notice</a></li>
+</ul>
+</div>
+</div>
+</div>
+</body></html>

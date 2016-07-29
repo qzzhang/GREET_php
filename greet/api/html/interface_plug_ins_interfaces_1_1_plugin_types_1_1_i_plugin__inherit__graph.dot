@@ -1,0 +1,13 @@
+digraph "PlugInsInterfaces.PluginTypes.IPlugin"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PlugInsInterfaces.Plugin\lTypes.IPlugin",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PlugInsInterfaces.Plugin\lTypes.ICommandLinePlugin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_plug_ins_interfaces_1_1_plugin_types_1_1_i_command_line_plugin.html",tooltip="Specify the members for a plugin that can execute command line commands "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PlugInsInterfaces.Plugin\lTypes.IDataPlugin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_plug_ins_interfaces_1_1_plugin_types_1_1_i_data_plugin.html",tooltip="Definition of the members that a plugin using the internal data must implement. "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PlugInsInterfaces.Plugin\lTypes.IGraphicalMenusPlugin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_plug_ins_interfaces_1_1_plugin_types_1_1_i_graphical_menus_plugin.html",tooltip="If a plugin extends from this interface, some menu can be added to the main GREET windows ..."];
+}

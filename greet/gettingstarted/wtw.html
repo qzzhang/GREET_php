@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../greetstyleFull.css" />
+<title>GREET - Free and maintained</title>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40965405-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body style="" lang="EN-US">
+<a href="../index.htm">
+<div id="top">
+</div></a>
+<div id="content">
+<table border="0">
+<tbody>
+<tr>
+<td>
+<h1>Well to Wheels</h1>
+Well to Wheel results account for all the energy and emissions necessary to produce the fuel used in the car (Well to Pump) and the operation energy and emissions associated with the
+vehicle technology (tail pipe emissions, other emissions and energy efficiency of the vehicle)<br>
+<div id="image" style="float: left;"><img alt="Well to Wheel : Well to Pump and Vehicle Technology" src="pics/wtw-diagram.png" style="border: 0px none ; margin-top: 3px;" width="600">
+<br><div style="font-size:80%">Well to Wheel : Well to Pump and Vehicle Technology</div>
+</div>
+The diagram above represents the idea behind GREET: Perform the life cycle analysis on fuel production, perform the life cycle analysis on materials production, and combined the two
+in order to estimate the cradle to grave impact of different transportation technologies. The Well to Wheel analysis represents therefore a subset of the cradle to grave as 
+the energy and emission associated with the manufacturing and recycling of the vehicles are not accounted for in WTW.
+<h2>Well to Wheels results explorer - Grid Independent Vehicle</h2>
+<p> 
+In GREET the well to wheels explorer allows the user to select a vehicle technology and see results associated with the operation of the vehicle itself and the well to wheel results 
+including the operation and the production of the fuel.<br>
+In order to see the results associated with a vehicle, you must select a vehicle into the tree on the left. Vehicle are categorized per fuel type, so to select a conventional gasoline 
+spark ignition engine car, double click on "Reformulated Gasoline E10" then select the desired vehicle:<br>
+<div id="image" style="float: left;"><img alt="Well to Wheel Explorer : Conventional gasoline car results" src="pics/wtw-gasoline-car.png" style="border: 0px none ; margin-top: 3px;" width="600">
+<br><div style="font-size:80%">Well to Wheel Explorer : Conventional gasoline car results</div>
+</div>
+</p>
+<p>
+The energy and emission results are displayed on the right and classified in two main categories:
+<ul>
+<li>- Vehicle Operation</li>
+These results are calculated based on the vehicle parameters only. The energy efficiency and emission factors for that car are taken into account, but no upstream is added there.
+<li>- Total</li>
+Represents the Well to Wheels results for that car: includes the operation energy and emissions as well as the upstream energy and emissions necessary for the production of the fuel
+</ul>
+</p>
+<p>
+On the top of the results we can see a couple of interesting items:
+<ul>
+<li>- The vehicle name</li>
+This name can be clicked in order to access the vehicle parameters
+<li>- The fuel blend in the tank of that vehicle</li>
+By clicking the name of the pathways or mixes used, the user can navigate to these pathways and mixes
+<li>- The functional unit</li>
+Allows the user to see results per distance travelled (mile or 100km) or per energy used by the power plant of the vehicle (ICE or other technology). Showing the results per energy uses thus 
+"ignores" the vehicle efficiency from the results.
+<li>- Target Year for Simulation</li>
+The target year used for the Well to Product: All parameters in the processes that have time series available will be using the value for the target simulation year
+<li>- Model Year for Vehicle Simulation</li>
+The average model year of vehicles on the road. We usually assume that the average age of the vehicles on the road is 5 years. Thus the simulations for the vehicle technologies (engine efficiency
+and emission factors) are 5 years "older" than the assumptions used for the fuel production. This parameter is adjustable in the Simulation Parameters.
+</ul>
+</p>
+<h2>Well to Wheels results explorer - Grid Connected Vehicle</h2>
+<p>
+For GREET connected vehicle the approach is similar, the only difference is that grid connected vehicle will be calculated for two distinct operation modes: Charge Depletion (CD) and Charge Sustaining (CS)<br>
+The results will be shown for:
+<ul>
+<li>- The operation energy and emissions</li>
+Does not includes any upstream
+<li>- The Charge Depleting mode</li>
+Uses some electric energy charged from the grid into the battery as well as some fuel for the engine
+<li>- The Charge Sustaining mode</li>
+The vehicle operates as a regular hybrid with no energy from the grid used.
+</ul>
+<div id="image" style="float: left;"><img alt="Well to Wheel Explorer : Gasoline PHEV Car" src="pics/wtw-grid-connected.png" style="border: 0px none ; margin-top: 3px;" width="600">
+<br><div style="font-size:80%">Well to Wheel Explorer : Gasoline PHEV Car</div>
+</div>
+</p>
+</td>
+</tbody>
+</table>
+<div id="footer-legal">
+<br>
+<div style="float: left">
+<img style="padding: 6px 0px;" src="../pic/footer_doe.png" ></img>
+</div>
+<div style="float: right">
+<img src="../pic/anl.png" height="60"></img>
+</div>
+<div style="text-align: center;">
+<ul>
+  <li><a href="http://science.energy.gov/">U.S. Department of Energy Office of Science</a></li>
+  <li><a href="http://www.uchicagoargonnellc.org/">UChicago Argonne LLC</a></li>
+  <li><a href="/privacy-security-notice">Privacy & Security notice</a></li>
+</ul>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,266 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="//greet.es.anl.gov/greet/greetstyle.css" />
+<title>GREET - Free and maintained</title>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40965405-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body style="" lang="EN-US">
+<a href="//greet.es.anl.gov/greet/index.htm">
+<div id="top">
+</div></a>
+<div id="content">
+<h1>Changes from 2013 to 2014 database (r9800 to r10747)</h1>
+<p>
+Due to these modifications, the old database needs to be converted to the new 2014 format. During that conversion errors may appear; they will be fixed by merging your file with the database update, however obsolete pathways and mixes from the old database will remain.<br>
+The obsolete items should not be used, and the user should read the associated notes inserted by the 2014 updates to know about the newly created pathways and mixes as replacement for the obsolete ones.</p>
+</p>
+<p>
+This applies only if you have data stored in a database in the 2013 format and want to upgrade to 2014 format.
+In any other cases, you can simply delete all the data related to 2013 in your My Documents\Greet\Data folder and start the software. A new version of the database will be automatically downloaded.
+</p>
+<p>
+This page lists the pathways and mixes that are now obsolete in the database and replaced with newer entities.
+</p>
+<table border="0">
+<tbody>
+<tr>
+<td>
+
+<h1>Obsolete Resources</h1>
+<table border="0">
+<tbody>
+<tr><td><h3><tr><td><h3>RESOURCE: Diammonium phosphate - Copy (ID: 2846912)</h3><p>This resource is now obsolete because it was ducplicated in the database</p></td></tr>
+</tbody>
+</table>
+
+<h1>Obsolete Mixes</h1>
+<p>
+Many mixes were removed because their output was never used in any transportation system directly. In the 2013 version of GREET, we were constrained to 
+create pathways and mixes to achieve complex structures.
+</p>
+<div id="image" style="float: center;"><img alt="Well to product explorer" src="//greet.es.anl.gov/greet/pic/pathway-struct-update.gif" style="border: 0px none ; margin-top: 3px;" width="600">
+<br><div style="font-size:80%">Structure simplification by reducing the amount of pathways and mixes needed.</div>
+</div>
+<p>
+In GREET 2014 complex structure can be achieved in a single pathway, and there is no need to create trees of pathways and mixes interconnected together.<br>
+The figure above shows how two pathways and one mix where fusioned together in the 2014 version of the database, thus no need for Pathway A, Pathway B and Mix A: 
+They have all been replaced by Pathway C that encapsulate all processes.
+</p>
+<div id="image" style="float: center;"><img alt="Well to product explorer" src="//greet.es.anl.gov/greet/pic/crude-prod.png" style="border: 0px none ; margin-top: 3px;" width="600">
+<br><div style="font-size:80%">Example of a mix transformed into a pathway for Crude Oil production in the U.S.</div>
+</div>
+<table border="0">
+<tbody>
+<tr><td><h3>MIX: Liquified Still Gas Production (ID: 5800)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: Sugar Cane Production (ID: 7000)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: Hydrochloric Acid Production - Citric Acid (ID: -1904532096)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: Brasil Mix with Transportation (ID: 7307)</h3><p>Replaced by the pathway NAME: Distributed - Brazil Mix in 2004 (ID:9719060) in order to have a more uniform structure in the Electricity production. Please use the new pathway "Distributed - Brazil Mix in 2004" instead.</p></td></tr>
+<tr><td><h3>MIX: Biomass Power Plants (ID: 14)</h3><p>Integrated in the pathway NAME: Non Distributed - Biomass Power Generation (ID:53602096) in order to have a more uniform structure in the Electricity production. Please use the new pathway "Non Distributed - Biomass Power Generation" instead.</p></td></tr>
+<tr><td><h3>MIX: Herbaceous (ID: 7313)</h3><p>Integrated in the pathway NAME: Non Distributed - Biomass Power Generation (ID:53602096) in order to have a more uniform structure in the Electricity production. Please use the new pathway "Non Distributed - Biomass Power Generation" instead.</p></td></tr>
+<tr><td><h3>MIX: Farmed trees (ID: 9)</h3><p>Integrated in the pathway NAME: Non Distributed - Biomass Power Generation (ID:53602096) in order to have a more uniform structure in the Electricity production. Please use the new pathway "Non Distributed - Biomass Power Generation" instead.</p></td></tr>
+<tr><td><h3>MIX: Forest Residue (ID: 15)</h3><p>Integrated in the pathway NAME: Non Distributed - Biomass Power Generation (ID:53602096) in order to have a more uniform structure in the Electricity production. Please use the new pathway "Non Distributed - Biomass Power Generation" instead.</p></td></tr>
+<tr><td><h3>MIX: Nuclear (ID: 22)</h3><p>Integrated in the pathway NAME: Non Distributed - Nuclear Power Generation (ID:53277245) in order to have a more uniform structure in the Electricity production. Please use the new pathway "Non Distributed - Nuclear Power Generation" instead.</p></td></tr>
+<tr><td><h3>MIX: All Feeds (ID: 13)</h3><p>Replaced by the mix NAME: US Average for Ethanol Production (at the Refueling Station) (ID:22939769) in order to have a more uniform structure in the Ethanol production. Please use the new mix "US Average for Ethanol Production (at the Refueling Station)" instead.</p></td></tr>
+<tr><td><h3>MIX: Dry and Wet Milling (ID: 3600)</h3><p>Replaced by the pathway NAME: Ethanol Production from Corn (ID:51207813) in order to have a more uniform structure in the Ethanol production. Please use the new pathway "Ethanol Production from Corn" instead.</p></td></tr>
+<tr><td><h3>MIX: Sodium Hydroxide Production (ID: 11200)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: Sodium Methoxide Production (ID: 11300)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: Hydrochloric Acid Production - Hydrochloric Acid (ID: 11400)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: E-Diesel Upstream (ID: 3900)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: Gasoline with additives (E10) (ID: 22940018)</h3><p>Replaced by the pathway NAME: Reformulated Gasoline (E10) to Refueling Station (ID:57) in order to have a more uniform structure in the E10 production. Please use the new pathway "Reformulated Gasoline (E10) to Refueling Station" instead.</p></td></tr>
+<tr><td><h3>MIX: Gasoline from Crude Oil with Additives (ID: 2601)</h3><p>Legacy mix, replaced by Reformulated Gasoline E10</p></td></tr>
+<tr><td><h3>MIX: Sugarcane Ethanol: Combined (ID: 7)</h3><p>Replaced by the pathway NAME: Ethanol Production from Sugarcane (ID:20282) in order to have a more uniform structure in the Ethanol production. Please use the new pathway "Ethanol Production from Sugarcane" instead.</p></td></tr>
+<tr><td><h3>MIX: Combined Corn, Sugarcane, and Cellulosic Ethanol (ID: 8)</h3><p>Legacy mix, not used, replaced by the mix NAME: US Average for Ethanol Production (at the Refueling Station) (ID:22939769) in order to have a more uniform structure in the Ethanol production. Please use the new mix "US Average for Ethanol Production (at the Refueling Station)" instead.</p></td></tr>
+<tr><td><h3>MIX: Combined Upstream - Liquid Hydrogen (ID: 4902)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: North America for Recovery Shale and Regular (ID: 6)</h3><p>Replaced by the pathway NAME: NA NG from Shale and Regular Recovery (ID:121) in order to have a more uniform structure in the Natural Gas production. Please use the new pathway "NA NG from Shale and Regular Recovery" instead.</p></td></tr>
+<tr><td><h3>MIX: Natural Gas Fired Power Plants (ID: 20)</h3><p>Integrated in the pathway NAME: Non Distributed - Natural Gas-Fired Power Generation (ID:67) in order to have a more uniform structure in the Electricity production. Please use the new pathway "Non Distributed - Natural Gas-Fired Power Generation" instead.</p></td></tr>
+<tr><td><h3>MIX: Other Power Plants (ID: 32)</h3><p>Integrated in the pathway NAME: Non Distributed - Other Power Generation Plants (ID:1000) in order to have a more uniform structure in the Electricity production. Please use the new pathway "Non Distributed - Other Power Generation Plants " instead.</p></td></tr>
+<tr><td><h3>MIX: Residual Oil-Fired Power Plants (ID: 29688496)</h3><p>Integrated in the pathway NAME: Non Distributed - Oil-Fired Power Generation (ID:29688220) in order to have a more uniform structure in the Electricity production. Please use the new pathway "Non Distributed - Oil-Fired Power Generation" instead.</p></td></tr>
+<tr><td><h3>MIX: Coal-Fired Power Plants (ID: 29687539)</h3><p>Integrated in the pathway NAME: Non Distributed - Coal-Fired Power Generation (ID:70) in order to have a more uniform structure in the Electricity production. Please use the new pathway "Non Distributed - Coal-Fired Power Generation" instead.</p></td></tr>
+<tr><td><h3>MIX: Renewable Energy Production (ID: 8500)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: Production Mix (ID: 10700)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: Natural gas (Small Boiler) (ID: 10701)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: for Dimetyl Ether - Biomass (ID: 15101)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: for Methanol - Biomass (ID: 15102)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: for Gaseous Hydrogen - Biomass (ID: 15103)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: LWR Plant (3.5% Enriched) (ID: 8000)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: HTGR Plant (10% Enriched) (ID: 8001)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: Hydroelectric Power (ID: 15700)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: Cellulose (ID: 13700)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: Yeast (ID: 13800)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: for Fistcher-Tropsch Diesel - Bio-char (ID: 419922200)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: for Dimetyl Ether - Bio-char (ID: 419922201)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: for Methanol - Bio-char (ID: 419922202)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: for Gaseous Hydrogen - Bio-char (ID: 419922203)</h3><p>Legacy mix, not used, undefined upstream</p></td></tr>
+<tr><td><h3>MIX: Sorghum Ethanol: Combined (ID: 31930838)</h3><p>Integrated in the pathway NAME: Ethanol Production from Sorghum (ID:20109854) in order to have a more uniform structure in the Ethanol production. Please use the new pathway "Ethanol Production from Sorghum" instead.</p></td></tr>
+<tr><td><h3>MIX: Forest Residue: Combined (ID: 31930910)</h3><p>Integrated in the pathway NAME: Ethanol Production from Forest Residue (ID:20261) in order to have a more uniform structure in the Ethanol production. Please use the new pathway "Ethanol Production from Forest Residue" instead.</p></td></tr>
+<tr><td><h3>MIX: Corn Stover Combined (ID: 31930938)</h3><p>Integrated in the pathway NAME: Ethanol Production from Corn Stover (ID:8711) in order to have a more uniform structure in the Ethanol production. Please use the new pathway "Ethanol Production from Corn Stover" instead.</p></td></tr>
+<tr><td><h3>MIX: Willow Ethanol: Combined (ID: 31936731)</h3><p>Integrated in the pathway NAME: Ethanol Production from Willow (ID:31936639) in order to have a more uniform structure in the Ethanol production. Please use the new pathway "Ethanol Production from Willow" instead.</p></td></tr>
+<tr><td><h3>MIX: Poplar Ethanol: Combined (ID: 32001870)</h3><p>Integrated in the pathway NAME: Ethanol Production from Poplar (ID:24248753) in order to have a more uniform structure in the Ethanol production. Please use the new pathway "Ethanol Production from Poplar" instead.</p></td></tr>
+<tr><td><h3>MIX: Switchgrass Ethanol: Combined (ID: 32002147)</h3><p>Integrated in the pathway NAME: Ethanol Production from Switchgrass (ID:8710) in order to have a more uniform structure in the Ethanol production. Please use the new pathway "Ethanol Production from Switchgrass" instead.</p></td></tr>
+<tr><td><h3>MIX: Miscanthus Ethanol: Combined (ID: 32002505)</h3><p>Integrated in the pathway NAME: Ethanol Production from Miscanthus (ID:140) in order to have a more uniform structure in the Ethanol production. Please use the new pathway "Ethanol Production from Miscanthus" instead.</p></td></tr>
+</tbody>
+</table>
+
+<h1>Obsolete Pathways</h1>
+<p>Pathways can be rendered obsolete if they were used in mixes that are now themselves obsolete, and never used in any other places.</p>
+<table border="0">
+<tbody>
+<tr><td><h3>PATHWAY: Oil-Fired (Stream Turbine) Power Plant (ID: 29688577)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Oil-Fired (Gas Turbine) Power Plant wtih Distribution (ID: 29688334)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Farmed Trees Power Production (Steam Cycle) (ID: 107)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Biomass (woody)-Fired IGCC Power Plant with Distribution (ID: 143)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Corn Stover Ethanol: Gasification (ID: 32006349)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Sugarcane Produced and Transported  in Brazil  (ID: 9651848)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Forest Residue Power Production (Utility Boiler) (ID: 110)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Other Power Plants (ID: 73)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Forest Residue Ethanol: Gasification (ID: 32006006)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: North American Shale Gas Feedstock Production (ID: 128)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Transported Electricity from Forest Residue (ID: 1009)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: NG-Fired Combined-Cycle Gas Turbine Plant with Distribution (ID: 690)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Uranium Dioxide (ID: 81)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: North American NG Power Production (Simple Cycle) with Distribution (ID: 141)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Dimethyl Ether from Farmed Trees (ID: 10006)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Sweet Sorghum Ethanol Production (Conventional) (ID: 20181452)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Switchgrass Power Production (Steam Turbine) (ID: 108)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Nuclear-LWR Power Plant (ID: 38)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Biogenic Waste, Pumped Storage, and etc. (ID: 10002)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Liquid Hydrogen (with export) from Biomass (ID: 89)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Electricity Forest Residue IGCC Generation (ID: 109)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Transported Electricity from Biomass Fired Power Plants (ID: 1220)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Ethanol from Sugarcane Produced in Brazil and Used in US (ID: 20283)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: NG-Fired Power Plant with Distribution (ID: 132)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Transported Electricity from Geothermal Power (ID: 9875)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Oil-Fired Power Plant (ID: 66)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Transported Electricity from Solar Power (ID: 39001)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Transportated Electricity from Other Power Plants (ID: 3333)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Switchgrass IGCC Power Plant (ID: 105)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Forest Residue Power Production (Utility Boiler) with Transmission and Distribution (ID: 136)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Natural Gas for Electricity generation (ID: 2)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Biomass-Fired Power Plant (Steam Turbine) with Distribution (ID: 71)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: North American NG Power Production (Internal Combustion Engine) (ID: 29685976)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Biomass (Forest Residue)-Fired Power Plant (Steam Turbine) with Distribution (ID: 146)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Transported Electricity from Farmed Trees (ID: 1007)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Oil-Fired (Internal Combustion Engine) Power Plant (ID: 29688010)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: On-site Electricity Generation using RNG-Fired Turbine (ID: 25805715)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: North American NG Power Production (Combined Cycle) with Distribution (ID: 2991238)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Coal Power Production (Steam Turbine) with Distribution (ID: 135)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: North American NG Power Production (Simple Cycle) (ID: 68)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Sweet Sorghum Ethanol (Integrated) (ID: 20188501)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Grain sorghum ethanol using RNG as process fuel (ID: 20177844)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Uranium Dioxide from Uranium Ore (ID: 55)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Transported Electricity from Nuclear HTGR Plants (ID: 7200)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Transported Electricity from Herbaceous (ID: 1008)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Sugar Cane for Brazil Ethanol Plant (ID: 20136)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Ethanol from Wet Mill Corn (ID: 2025)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Biomass (Herbaceous)-Fired power Plant (IGCC) with Distribution (ID: 137)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Miscanthus Ethanol: Gasification (ID: 32002488)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Oil-Fired Power Plant with Distribution (ID: 133)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Transported Electricity from Biogenic Waste, Pumped Storage, and etc. (ID: 10003)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Ethanol from Dry Mill Corn (ID: 2024)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Oil-Fired (Internal Combustion Engine) Power Plant with Distribution (ID: 29687963)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Transportated Electricity from NG Fired Plant (ID: 6900)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Forage Sorghum Ethanol Production (ID: 20187620)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Liquid Hydrogen (no export) from Biomass (ID: 88)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: North American NG Power Production (Internal Combustion Engine) with Distribution (ID: 29686993)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Biomass (Forest Residue)-Fired power Plant (IGCC) with Distribution (ID: 147)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Poplar Ethanol: Gasification (ID: 32001833)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Electricty from Farmed Trees Power Production (IGCC) (ID: 106)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Switchgrass Ethanol: Gasification (ID: 32002120)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: North American NG Power Production (Steam Turbine) with Distribution (ID: 142)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Geothermal Power (ID: 9876)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Corn Stover for Standalone Bio-refinery (ID: 13106425)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Ethanol via Fermentation from Farmed Trees (ID: 20281)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Transported Electricity from Wind Power (ID: 100011)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: North American Shale Gas Recovery (ID: 119)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Transported Electricity from Nuclear LWR Plants (ID: 3800)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: North American Natural Gas Regular Recovery (ID: 120)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Oil-Fired (Stream Turbine) Power Plant with Distribution (ID: 29687838)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Ethanol from Sugarcane Produced and Used in Brazil  (ID: 9651358)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Biomass (Herbaceous)-Fired Steam Turbine Power Plant with Distribution (ID: 145)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Nuclear-LWR Power Plant with Distribution (ID: 138)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Willow Ethanol: Gasification (ID: 31936690)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Hydroelectric Power with Distribution (ID: 70110)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Transported Electricity from Coal Fired Plants (ID: 7001)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Transportated Electricity from Oil Fired Plant (ID: 6666)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Coal Power Production (IGCC) with Distribution (ID: 701)</h3><p></p></td></tr>
+<tr><td><h3>PATHWAY: Biomass (Farmed Trees)-Fired Power Plant (Steam Turbine) with Distribution (ID: 144)</h3><p></p></td></tr>
+</tbody>
+</table>
+
+<h1>Obsolete Processes</h1>
+<p>Processes can be obsolete if they are so outdated that their results are not valid anymore or if they are used in obsolete pathways and nowhere else.</p>
+<table border="0">
+<tbody>
+<tr><td><h3>PROCESS: Brazil Sugar Cane Bagasse (ID: 46000)</h3><p></p></td></tr>
+<tr><td><h3>PROCESS: NNA NG Processing (ID: 6)</h3><p></p></td></tr>
+<tr><td><h3>PROCESS: Electricity: Oil-Fired power Plant (ID: 511)</h3><p></p></td></tr>
+<tr><td><h3>PROCESS: Electricity: Biomass-Fired power Plant (Steam Turbine) (ID: 516)</h3><p></p></td></tr>
+<tr><td><h3>PROCESS: Electricity: Biomass (woody)-Fired IGCC Power Plant (ID: 5160)</h3><p></p></td></tr>
+<tr><td><h3>PROCESS: Electricity: Other power Plants (hydro,wind, geothermal, etc,) (ID: 518)</h3><p></p></td></tr>
+<tr><td><h3>PROCESS: LS Diesel Refining (ID: 98)</h3><p></p></td></tr>
+<tr><td><h3>PROCESS: Farmed Trees to Ethanol via Fermentation (ID: 603)</h3><p></p></td></tr>
+<tr><td><h3>PROCESS: Ethanol Production from Brazilian Sugar Cane Bagasse (ID: 611)</h3><p></p></td></tr>
+<tr><td><h3>PROCESS: CG Storage (ID: 211)</h3><p></p></td></tr>
+<tr><td><h3>PROCESS: CA RFG Storage (ID: 215)</h3><p></p></td></tr>
+<tr><td><h3>PROCESS: Farmed Trees IGCC Power Plant (ID: 92)</h3><p></p></td></tr>
+<tr><td><h3>PROCESS: Farmed Trees (Steam Turbine) Power Plant (ID: 111)</h3><p></p></td></tr>
+<tr><td><h3>PROCESS: Biomass (Herbaceous)-IGCC Fired power Plant (ID: 19)</h3><p></p></td></tr>
+<tr><td><h3>PROCESS: Electricity: Biomass (woody)-Fired power Plant (Steam Turbine) (ID: 30)</h3><p></p></td></tr>
+<tr><td><h3>PROCESS: Electricity: Biomass (Herbaceous) Steam Turbine-Fired power Plant (ID: 33)</h3><p></p></td></tr>
+<tr><td><h3>PROCESS: Electricity: Biomass (Forest Residue) Steam Turbine-Fired power Plant (ID: 35)</h3><p></p></td></tr>
+<tr><td><h3>PROCESS: Vegetable Oil Transesterification to Biodiesel (ID: 28)</h3><p></p></td></tr>
+</tbody>
+</table>
+
+<h1>Obsolete Vehicle</h1>
+<p>These vehicles where hypothetical and outdated, thus we decided to mark them as obsolete.</p>
+<table border="0">
+<tbody>
+<tr><td><h3>VEHICLE: Grid-Independent SI HEV: Low-Level EtOH Blend with Gasoline Car (ID: 29)</h3><p></p></td></tr>
+<tr><td><h3>VEHICLE: Grid-Connected SI PHEV: Low-Level EtOH Blend with Gasoline Car (ID: 38)</h3><p></p></td></tr>
+<tr><td><h3>VEHICLE: Pyro Test (ID: 67)</h3><p></p></td></tr>
+</tbody>
+</table>
+
+<h1>Obsolete Parameter Tables</h1>
+<p>These tables were used to store the shares of some mixes blends, in order to simplify the data and make it easier to understand we decided to remove these table and put the shares directly in the mixes.</p>
+<table border="0">
+<tbody>
+<tr><td><h3>TABLE: Ethanol_Denaturents</h3><p>This table was removed because the ethanol denaturant used is now defined in the "Ethanol Resource" production mix named "US average for Denatured Ethanol Production (at the Bulk Terminal)."</p>
+<p>In GREET 2013 the denaturing ratios where calculated and used in the vehicles feedstock, to simplify the structure of the data, we decided to created a "Ethanol Denatured" resource to make the production of it clear.</p></td></tr>
+<tr><td><h3>TABLE: Volumetric_Shares</h3><p></p></td></tr>
+<tr><td><h3>TABLE: Fuel_Additive_Volumetric_Shares</h3><p></p></td></tr>
+</tbody>
+</table>
+
+<div id="footer-legal">
+<br>
+<div style="float: left">
+<img style="padding: 6px 0px;" src="//greet.es.anl.gov/greet/pic/footer_doe.png" ></img>
+</div>
+<div style="float: right">
+<img src="//greet.es.anl.gov/greet/pic/anl.png" height="60"></img>
+</div>
+<div style="text-align: center;">
+<ul>
+  <li><a href="http://science.energy.gov/">U.S. Department of Energy Office of Science</a></li>
+  <li><a href="http://www.uchicagoargonnellc.org/">UChicago Argonne LLC</a></li>
+  <li><a href="http://www.anl.gov/privacy-security-notice">Privacy & Security notice</a></li>
+</ul>
+</div>
+</div>
+</div>
+</body></html>

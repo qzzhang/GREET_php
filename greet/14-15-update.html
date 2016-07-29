@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<link rel="stylesheet" type="text/css" href="greetstyleFull.css" />
+<title>GREET - 2014 to 2015 Update</title>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40965405-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body style="" lang="EN-US">
+<a href="index.htm">
+<div id="top">
+</div></a>
+<div id="content">
+<table border="0">
+<tbody>
+<tr>
+<td>
+<h1>How to update from 2014 to 2015 safely</h1>
+<p>
+<p>The structure of the datafile in GREET 2015 has been modified in order to allow more features and flexibility. 
+For example placeholder for infrastructure expansion are there, and most of the parameters have been converted to time series. The vehicles have also been modified heavily in order to allow for more flexibility.
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<h1>Step by step guide for updading your existing file</h1>
+<p>
+In this guide, we will assume that your saved your changes in a data file called my2014data.greet, we will update this file to the new format and merge the updates of the 2015 release into it.
+</p>
+<p>
+After installing the new GREET 2015 software, you'll be able to observe the following behavior:
+<ul>
+<li class="arrow">If the folder Documents/Greet/Data contains a file called default.greet, it'll be automatically loaded. Otherwise the software will download the latest datafile and call it default.greet</li>
+<li class="arrow">If the file you're loading is from an older version of the software, loading will take more time as we are converting the file format to the newer format</li>
+</ul>
+</p>
+<p>
+<img src="pic/2015/datafolder-afterinstall.png" alt="Data folder after GREET 2015 installation" style="float:right;"> 
+In this example, after installing GREET 2015, I now have two files in my data folder:
+<ul>
+<li class="arrow">default.greet: The most updated file automatically downloaded by GREET 2015</li>
+<li class="arrow">my2014data.greet: My older file which contains my changes but not the latest updates</li>
+</ul>
+</p>
+<p>
+In order to update my older file with all the updates of the 2015 version of the database, I need to load the file in GREET 2015, wait for it to be converted to the newer format, and then update it using the data merging tool.<br><br>
+<img src="pic/2015/openoldfile.png" alt="Opening the older file in order to update it"> 
+</p>
+<p>
+After loading the older file, you may see a "Database Information" message, letting you know that there is an error in the file. This is due to an error we had in the previous version of the datafile. 
+Upon loading a file in GREET 2015, more detailled integrity checks are performed on the database, thus resulting in that message. You can click the "OK" button and ignore it for now, as updating your file will fix that data error.
+</p>
+<p>
+<img src="pic/2015/upgradedversion.png" alt="Data file upgraded format" style="float:right;"> 
+You can also see that in your data folder you'll have now one more file and folder:
+<ul>
+<li class="arrow">my2015data-Upgradedv4.greet is the result of upgrading your datafile to the latest file format used by greet. We're keeping the .greet extension, but the inner content is now updated to our latest format.</li>
+<li class="arrow">Temp is a folder that contains a copy of your original file before we performed the conversion, this is done in case something happens and you still want to keep your original files intact.</li>
+</ul>
+</p>
+<p>
+Now that your file is loaded in GREET 2015, you can click on the "Database" menu then click on the item "Check for data updates". The software will query our servers to know if a newer version of the file is available for download.
+If it is, it will then offer you to download it, and later to merge the update and your data.<br><br>
+<img src="pic/2015/databasedownlodupdate.png" alt="Data file upgraded format" style="">
+</p>
+<p>
+When prompted by the merging tool about merging the update with your file, click "Yes", a new window will show you the files that are opened and the difference detected between the two files.<br>
+<img src="pic/2015/mergingquestions.png" alt="Data file upgraded format" style="float:right;"> 
+What the tool will do is compare all items that have the same ID, detect which ones have been udpated, which ones have been discarded and what are the new additions. You can decide to check one by one what are the changes by selecting the option "Manually select what to import", but for 
+an update like this one, it'll probably be a lot to check! I would suggest here that you select "Import all new and updated entities to File 1" then click the "Next" button.<br><br>
+<img src="pic/2015/mergingForm.png" alt="Data file upgraded format" > 
+</p>
+<p>
+When you file is merged you'll be able to enjoy the new updates of the database, but at the same time keep your newly added processes and pathway.
+<br><br>
+CAUTION: We compare processes using their IDs only, so if you made modifications to a process, and it has been updated in the newer file, your changes are going to be lost. However if you created new instances of processes and pathways, they will not be destroyed or overriden, we'll simply update the ones that were released by the GREET team.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="footer-legal">
+<br>
+<div style="float: left">
+<img style="padding: 6px 0px;" src="pic/footer_doe.png" ></img>
+</div>
+<div style="float: right">
+<img src="pic/anl.png" height="60"></img>
+</div>
+<div style="text-align: center;">
+<ul>
+  <li><a href="http://science.energy.gov/">U.S. Department of Energy Office of Science</a></li>
+  <li><a href="http://www.uchicagoargonnellc.org/">UChicago Argonne LLC</a></li>
+  <li><a href="http://www.anl.gov/privacy-security-notice">Privacy & Security notice</a></li>
+</ul>
+</div>
+</div>
+</div>
+</body></html>
