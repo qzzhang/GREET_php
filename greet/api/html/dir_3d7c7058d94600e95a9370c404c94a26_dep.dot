@@ -1,9 +1,0 @@
-digraph "C:/Users/ddieffenthaler/Desktop/SVN/source/greet-dev/main/PlugInsInterfaces/Properties" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_94e7e0f9e27b79ced3190fb22e4ca476 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="PlugInsInterfaces" fontname="Helvetica", fontsize="10", URL="dir_94e7e0f9e27b79ced3190fb22e4ca476.html"]
-  dir_3d7c7058d94600e95a9370c404c94a26 [shape=box, label="Properties", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_3d7c7058d94600e95a9370c404c94a26.html"];
-  }
-}
